@@ -1,11 +1,14 @@
 .navbar1 {
     position: fixed;
+    top: 0;
     width: 100%;
     background-color: #333;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+    height: 80px;
+    z-index: 1000;
 }
 
 .navbar1 a {
@@ -29,7 +32,15 @@
     text-decoration: none;
     margin: 20px;
     color: antiquewhite;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+.navbar1 .links a::after {
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
 
 .navbar1 .links a:hover {
     cursor: pointer;

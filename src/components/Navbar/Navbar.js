@@ -1,15 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import './Navbar.css'
 
 const Navbar = () => (
   <nav className="navbar1">
-      <Link to='/'><h1>SK</h1></Link>
+      <HashLink smooth onClick={() => window.scrollTo(0,0)}><h1>SK</h1></HashLink>
       <div className='links'>
-        <Link to='/'>Home</Link>
-        <Link to='#experiences'>Experience</Link>
-        <Link to='/projects'>Projects</Link>
-        <Link to='/contact'>Contact Me</Link>
+        <HashLink smooth onClick={() => window.scrollTo(0,0)}>Home</HashLink>
+        <HashLink smooth to='#experiences'>Experiences</HashLink>
+        <HashLink smooth to='#projects'>Projects</HashLink>
+        <HashLink smooth to='#contact'>Contact Me</HashLink>
       </div>
   </nav>
 );

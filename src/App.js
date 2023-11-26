@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
         <Navbar/>
-        <div className="content">
+        <div className="content" id='home'>
           <Home/>
           <Experience/>
           <Project/>

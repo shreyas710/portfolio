@@ -1,8 +1,8 @@
 import React from 'react';
 import './Home.css'
 import { TypeAnimation } from 'react-type-animation';
-import { SocialIcon } from 'react-social-icons';
-
+import CIcon from '@coreui/icons-react';
+import { cibGithub, cibLinkedinIn } from '@coreui/icons';
 
 const Home = () => {
 
@@ -25,7 +25,7 @@ const Home = () => {
       <div className="extra row">
         <div className="aboutme col-6">
           <h5>I'm a graduate student at University of Southern California, CA. <br></br>
-          I have a keen interest in Data Structures and Algorithms. I also enjoy building mobile applications!</h5>
+          I have a keen interest in Data Structures and Algorithms. I also enjoy building websites. </h5>
 
           <br />
           <br />
@@ -38,18 +38,22 @@ const Home = () => {
         </div>
         <div className="profileLinks col-3">
           <div className="github row">
-            <a href="https://github.com/shreyas710" target='_blank' rel='noreferrer noopener'><SocialIcon network="github" style={{ width: '25px', height: '25px' }}/>
+            <a href="https://github.com/shreyas710" target='_blank' rel='noreferrer noopener'>
+            <CIcon style={{height: '25px', width: '25px'}} icon={cibGithub}/>
             <p>GitHub</p></a>
           </div>
           <div className="linkedin row">
-            <a href="https://www.linkedin.com/in/shreyasnk532" target='_blank' rel='noreferrer noopener'><SocialIcon network="linkedin" style={{ width: '25px', height: '25px' }}/>
+            <a href="https://www.linkedin.com/in/shreyasnk532" target='_blank' rel='noreferrer noopener'>
+            <CIcon style={{height: '25px', width: '25px'}}  icon={cibLinkedinIn}/>
             <p>LinkedIn</p></a>
           </div>
         </div>
       </div>
 
       <div className="resumeButton row">
-        <button>View Resume</button>
+        <a href= 'https://drive.google.com/file/d/1MdsDC7jLm50WsZpjzTKRbX4NqhCDqYpQ/view?usp=sharing' target='_blank' rel='noreferrer noopener' type='button'>
+          View Resume
+        </a>
       </div>
     </div>
   );
