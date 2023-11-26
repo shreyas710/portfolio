@@ -23,7 +23,7 @@ const Experience = () => {
         <h3>{title}</h3>
       </div>
       <div className="content row">
-        
+        what
       </div>
     </div>
 
