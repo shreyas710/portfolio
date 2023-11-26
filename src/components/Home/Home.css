@@ -1,7 +1,63 @@
 .home {
-    text-align: center;
+    margin-top: 100px;
 }
 
-.extra {
-    margin-top: 20px;
+.home .extra {
+    margin-top: 50px;
+}
+
+.extra h5 {
+    font-family:Arial, Helvetica, sans-serif;
+    color: antiquewhite;
+}
+
+.profilepic img {
+    margin-left: 150px;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.profilepic img::after {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.profilepic img:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #f1356d;
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.25, 1.25);
+}
+
+.profilepic img:hover::after {
+    opacity: 1;
+}
+
+.home .resumeButton {
+    margin-top: 40px;
+    width: 150px;
+    height: 50px;
+}
+
+.home .resumeButton button {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    color: antiquewhite;
+    border: 1px solid #f1355d;
+    border-radius: 5px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.home .resumeButton button:hover {
+    background-color: #f1355d;
+}
+
+.home .resumeButton button::after {
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
