@@ -16,7 +16,7 @@ const Home = () => {
           ]}
           wrapper="div"
           speed={30}
-          style={{ color:'#f1356d', fontSize: '4em', display: 'inline-block', fontWeight: 'bolder' }}
+          style={{ color:'#f1356d', fontSize: '5em', display: 'inline-block' }}
           repeat={0}
         />
       </div>

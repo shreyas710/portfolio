@@ -3,7 +3,7 @@ import './Project.css'
 
 const Project = () => {
 
-  let title = `. . .<projects>. . . . .`
+  let title = `<projects>`
 
   return(
     <div className='project container' id='projects'>

@@ -3,7 +3,7 @@ import './Contact.css'
 
 const Contact = () => {
 
-  let title = `. . .<contact me>. . . . .`
+  let title = `<contact me>`
 
 
   return (
