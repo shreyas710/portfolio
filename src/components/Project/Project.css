@@ -3,7 +3,23 @@
     color: #f1356d;
 }
 
-.content {
+.projectContent {
     color: antiquewhite;
 }
 
+.projectImg img {
+    box-shadow: 0 0 100px black;
+    border-radius: 20px;
+}
+
+.projectHead, .projectDesc{
+    color: antiquewhite;
+}
+
+.projectDesc .description {
+    border: 1px solid #f1356d;
+    background-color: #f1356d;
+    border-radius: 20px;
+    height: 200px;
+    z-index: 1000;
+}

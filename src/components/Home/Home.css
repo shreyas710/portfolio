@@ -17,8 +17,8 @@
 }
 
 .profilepic img {
+    box-shadow: 0 0 50px black;
     border-radius: 15px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     -webkit-transform: scale(1.25, 1.25);
     transform: scale(1.25, 1.25);
 }
@@ -54,7 +54,7 @@
 }
 
 .github a p, .linkedin a p {
-    padding-left: 10px;
+    padding-left: 5px;
     color: antiquewhite;
     display: inline;
 }
@@ -62,7 +62,6 @@
 .profileLinks .linkedin {
     margin-top: 10px;
 }
-
 
 .profileLinks a p {
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);

@@ -10,8 +10,21 @@ const Project = () => {
       <div className="heading row">
         <h3>{title}</h3>
       </div>
-      <div className="content row">
-      </div>
+      {/* <div className="projectContent row">
+        <div className="project1 row">
+            <div className="projectHead col-3">
+
+            </div>
+            <div className="projectDesc col-3">
+              <div className="description">
+                
+              </div>
+            </div>
+          <div className="projectImg col-6">
+            <img src={require('../../assets/pathfinding.png')} alt="pathfinding" height='100%' width='100%'/>
+          </div>
+        </div>
+      </div> */}
     </div>
   )
 };
