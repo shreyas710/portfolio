@@ -11,8 +11,8 @@ const Contact = () => {
       <div className="heading row">
         <h3>{title}</h3>
       </div>
-      <div className="content row">
-
+      <div className="contactContent row">
+        
       </div>
     </div>
   )

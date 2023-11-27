@@ -46,3 +46,7 @@
     margin-top: 10px;
     font-size: 18px;
 }
+
+.descript ul li::marker {
+    color: #f1356d;
+}

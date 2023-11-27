@@ -98,7 +98,6 @@
 }
 
 .resumeButton a {
-    opacity: 0.7;
     text-decoration: none;
     font-size: large;
     background-color: transparent;
@@ -116,13 +115,14 @@
 }
 
 .resumeButton a:hover {
-    opacity: 1;
+    opacity: 0.5;
     border: 1px solid #f1355d;
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .resumeButton a:hover::after {
+    opacity: 1;
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
