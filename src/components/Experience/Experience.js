@@ -53,7 +53,7 @@ const Experience = () => {
         <Carousel showThumbs={false}>
         {exps.map((exp) => {
           return (
-            <div className="expcontent">
+            <div key={exp.id} className="expcontent">
               <div className="companyStart row">
                 <div className="roleName col-6">
                 {exp.role}
