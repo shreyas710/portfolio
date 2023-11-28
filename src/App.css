@@ -4,3 +4,21 @@
     padding: 20px;
     display: block;
 }
+
+.loadingContent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    background: #333;
+}
+
+.loadingLogo {
+    color: antiquewhite;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
