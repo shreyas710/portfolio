@@ -9,7 +9,7 @@ import ReactLoading from "react-loading";
 
 function App() {
 
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
