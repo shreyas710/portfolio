@@ -3,7 +3,7 @@ import { HashLink } from 'react-router-hash-link';
 import './Navbar.css'
 
 const Navbar = () => (
-  <nav className="navbar1">
+  <nav className="navbar1 container-fluid">
       <HashLink smooth onClick={() => window.scrollTo(0,0)}><h1>SK</h1></HashLink>
       <div className='links'>
         <HashLink smooth onClick={() => window.scrollTo(0,0)}>Home</HashLink>
