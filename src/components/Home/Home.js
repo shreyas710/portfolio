@@ -23,7 +23,7 @@ const Home = () => {
       
 
       <div className="extra row">
-        <div className="aboutme col-6">
+        <div className="aboutme col-md-6">
           <h5>I'm a graduate student at University of Southern California, CA. <br></br>
           I have a keen interest in Data Structures and Algorithms. I also enjoy building websites. </h5>
 
@@ -33,10 +33,10 @@ const Home = () => {
 
           <h5>Currently looking for opportunities to utilize my skills in collaborative and distributed environment.</h5>
         </div>
-        <div className="profilepic col-3">
+        <div className="profilepic col-md-3">
           <img src={require('../../assets/profile.jpg')} alt="profile" height='200px' width='150px'/>
         </div>
-        <div className="profileLinks col-3">
+        <div className="profileLinks col-md-3">
           <div className="github row">
             <a href="https://github.com/shreyas710" target='_blank' rel='noreferrer noopener'>
             <CIcon style={{height: '25px', width: '25px'}} icon={cibGithub}/>
