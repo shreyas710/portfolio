@@ -12,10 +12,9 @@ const Home = () => {
         <TypeAnimation
           sequence={[
             'Hi, I am Shreyas Kulkarni.',
-            1000,
           ]}
           wrapper="div"
-          speed={30}
+          speed={5}
           style={{ color:'#f1356d', fontSize: '5em', display: 'inline-block' }}
           repeat={0}
         />
@@ -34,7 +33,7 @@ const Home = () => {
           <h5>Currently looking for opportunities to utilize my skills in collaborative and distributed environment.</h5>
         </div>
         <div className="profilepic col-md-3">
-          <img src={require('../../assets/profile.jpg')} alt="profile" height='200px' width='150px'/>
+          <img src={require('../../assets/profile.jpg')} alt="profile" height='220px' width='140px'/>
         </div>
         <div className="profileLinks col-md-3">
           <div className="github row">
