@@ -50,7 +50,7 @@ const Home = () => {
       </div>
 
       <div className="resumeButton row">
-        <a href= 'https://drive.google.com/file/d/1MdsDC7jLm50WsZpjzTKRbX4NqhCDqYpQ/view?usp=sharing' target='_blank' rel='noreferrer noopener' type='button'>
+        <a href= 'https://drive.google.com/file/d/1kDoNegjvi9p9bW_CCG8ne1AFVMZh9qpU/view?usp=sharing' target='_blank' rel='noreferrer noopener' type='button'>
           View Resume
         </a>
       </div>

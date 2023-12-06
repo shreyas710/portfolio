@@ -5,7 +5,6 @@ import Experience from './components/Experience/Experience';
 import Project from './components/Project/Project';
 import Contact from './components/Contact/Contact';
 import { useEffect, useState } from 'react';
-import ReactLoading from "react-loading";
 
 function App() {
 
@@ -19,19 +18,8 @@ function App() {
 
   if(loading) {
     return (
-      <div className="App">
-        <div className="loadingContent row">
-          <div className="col-4"></div>
-          <div className="loadingLogo col-4">
-              <ReactLoading
-              type={"bars"}
-              color={"#f1365d"}
-              height={200}
-              width={200}
-            />
-          </div>
-          <div className="col-4"></div>
-        </div>
+      <div className="App loadingContent">
+        <img className='loadingLogo' src={require('./assets/loading.gif')} alt="loading..."/>
       </div>
     )
   } 
