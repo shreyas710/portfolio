@@ -17,3 +17,7 @@
     overflow: auto;
     background: #333;
 }
+
+.loadingText {
+    color: antiquewhite;
+}

@@ -18,8 +18,10 @@ function App() {
 
   if(loading) {
     return (
-      <div className="App loadingContent">
-        <img className='loadingLogo' src={require('./assets/loading.gif')} alt="loading..."/>
+      <div className="App loadingContent" style={{color: 'antiquewhite'}}>
+        <div class="spinner-border" role="status" style={{color: '#f1356d', width: '50px', height: '50px'}}>
+          <span class="visually-hidden">Loading...</span>
+        </div>
       </div>
     )
   } 

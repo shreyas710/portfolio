@@ -61,7 +61,7 @@ const Project = () => {
       <div className="heading row">
         <h3>{title}</h3>
       </div>
-      {/* <div className="projectContent row">
+      <div className="projectContent row">
         {projects.map(project => {
           return (
             <div key={project.id} className="project1 row">
@@ -86,7 +86,7 @@ const Project = () => {
           )
         })}
         
-      </div> */}
+      </div>
     </div>
   )
 };
