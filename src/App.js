@@ -5,10 +5,13 @@ import Experience from './components/Experience/Experience';
 import Project from './components/Project/Project';
 import Contact from './components/Contact/Contact';
 import { useEffect, useState } from 'react';
+import 'jquery/dist/jquery.min.js'; // Have to install and import jQuery because of bootstrap modal's dependency
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function App() {
 
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {

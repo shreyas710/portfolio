@@ -16,11 +16,13 @@ const Project = () => {
           id: 1
         },
         {
-          text: "Executed a diverse range of algorithms including Dijkstra\'s, A*, BFS, DFS, and Bidirectional Swarm",
+          text: "Executed a diverse range of algorithms including Dijkstra's, A*, BFS, DFS, and Bidirectional Swarm",
           id: 2 
         }
       ],
-      projectImg: '../../assets/pathfinding.png'
+      show: "show",
+      projectLink: "https://shreyas710.github.io/pathFindingVisualizer/",
+      sourceCodeLink: "https://github.com/shreyas710/pathFindingVisualizer"
     }, 
     {
       id: 2,
@@ -36,7 +38,7 @@ const Project = () => {
           id: 2
         }
       ],
-      projectImg: '../../assets/pathfinding.png'
+      show: "hide",
     },
     {
       id: 3,
@@ -52,7 +54,8 @@ const Project = () => {
           id: 2
         }
       ],
-      projectImg: '../../assets/pathfinding.png'
+      show: "hide",
+      sourceCodeLink: "https://github.com/sanketwadekar/placement_portal",
     }
   ]
 
@@ -61,31 +64,43 @@ const Project = () => {
       <div className="heading row">
         <h3>{title}</h3>
       </div>
-      <div className="projectContent row">
+      <div className="accordion" id="accordionExample">
         {projects.map(project => {
           return (
-            <div key={project.id} className="project1 row">
-              <div className="projectHead col-3">
-                {project.title}
-              </div>
-              <div className="projectDesc col-3">
-                <div className="description">
-                  <ul style={{listStyleType: 'square'}}>
-                    {project.desc.map((de) => {
-                      return (
-                        <li key={de.id}>{de.text}</li>
-                      )
-                    })}
-                  </ul>
+            <div key={project.id} className="accordion-item">
+              <h2 className="accordion-header" id={'heading' + project.id}>
+                <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target={'#collapse' + project.id} aria-expanded="true" aria-controls={'collapse' + project.id}>
+                  {project.title}
+                </button>
+              </h2>
+              <div id={'collapse' + project.id} className={"accordion-collapse collapse " + project.show} aria-labelledby={'heading' + project.id} data-bs-parent="#accordionExample">
+                <div className="accordion-body">
+                  <div className="description">
+                    <ul style={{listStyleType: 'square'}}>
+                      {project.desc.map((de) => {
+                        return (
+                          <li key={de.id}>{de.text}</li>
+                        )
+                      })}
+                    </ul>
+
+                    <div className="techStack">
+                      <span>Tech Stack: <br /></span>{project.techStack}
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="projectLink col-6">
+                      Project Link: 
+                    </div>
+                    <div className="sourceCode col-6">
+                      Source Code Link: 
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className="projectImg col-6">
-                <img src={require('../../assets/pathfinding.png')} alt={project.title} height='100%' width='100%'/>
               </div>
             </div>
           )
         })}
-        
       </div>
     </div>
   )
