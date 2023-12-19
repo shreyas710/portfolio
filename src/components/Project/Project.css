@@ -51,8 +51,42 @@
     font-size: 18px;
 }
 
+.projectLink, .sourceCodeLink {
+    color: antiquewhite;
+}
+
 .projectHead, .projectDesc{
     color: antiquewhite;
+}
+
+.links {
+    padding-top: 20px;
+}
+
+
+.links a {
+    text-decoration: underline;
+    color: antiquewhite;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.links a::after {
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+.links a:hover {
+    cursor: pointer;
+    color: #f1356d;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.links a:hover::after {
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .projectDesc .description {

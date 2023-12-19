@@ -88,13 +88,19 @@ const Project = () => {
                       <span>Tech Stack: <br /></span>{project.techStack}
                     </div>
                   </div>
-                  <div className="row">
-                    <div className="projectLink col-6">
-                      Project Link: 
-                    </div>
-                    <div className="sourceCode col-6">
-                      Source Code Link: 
-                    </div>
+                  <div className="links row">
+                    {
+                      project.projectLink && 
+                      <div className="col-2">
+                        <a href={project.projectLink} target='_blank' rel='noreferrer noopener'>Project Link</a>
+                      </div>
+                    }
+                    {
+                      project.sourceCodeLink && 
+                      <div className="col-2">
+                        <a href={project.sourceCodeLink} target='_blank' rel='noreferrer noopener'>Source Code</a>
+                      </div>
+                    }
                   </div>
                 </div>
               </div>
