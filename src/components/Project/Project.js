@@ -91,13 +91,13 @@ const Project = () => {
                   <div className="links row">
                     {
                       project.projectLink && 
-                      <div className="col-2">
+                      <div className="col-4">
                         <a href={project.projectLink} target='_blank' rel='noreferrer noopener'>Project Link</a>
                       </div>
                     }
                     {
                       project.sourceCodeLink && 
-                      <div className="col-2">
+                      <div className="col-4">
                         <a href={project.sourceCodeLink} target='_blank' rel='noreferrer noopener'>Source Code Link</a>
                       </div>
                     }
