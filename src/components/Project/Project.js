@@ -98,7 +98,7 @@ const Project = () => {
                     {
                       project.sourceCodeLink && 
                       <div className="col-2">
-                        <a href={project.sourceCodeLink} target='_blank' rel='noreferrer noopener'>Source Code</a>
+                        <a href={project.sourceCodeLink} target='_blank' rel='noreferrer noopener'>Source Code Link</a>
                       </div>
                     }
                   </div>

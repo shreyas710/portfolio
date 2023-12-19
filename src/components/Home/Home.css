@@ -50,7 +50,9 @@
 }
 
 .github a, .linkedin a {
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: antiquewhite;
 }
 
 .github a p, .linkedin a p {
