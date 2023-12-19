@@ -24,7 +24,7 @@ const Home = () => {
       <div className="extra row">
         <div className="aboutme col-md-9">
           <h5>I am a Computer Science Graduate Student at the University of Southern California.<br></br>
-          I have a good grasp of Data Structures and Algorithms. I have good experience in the fields of frontend and backend development.</h5>
+          I have a good grasp of Data Structures and Algorithms. I have good experience in the fields of <br />frontend and backend development.</h5>
 
           <br />
           <br />
