@@ -22,9 +22,9 @@ const Home = () => {
       
 
       <div className="extra row">
-        <div className="aboutme col-md-6">
-          <h5>I'm a graduate student at University of Southern California, CA. <br></br>
-          I have a keen interest in Data Structures and Algorithms. I also enjoy building websites. </h5>
+        <div className="aboutme col-md-9">
+          <h5>I am a Computer Science Graduate Student at the University of Southern California.<br></br>
+          I have a good grasp of Data Structures and Algorithms. I have good experience in the fields of frontend and backend development.</h5>
 
           <br />
           <br />
@@ -32,9 +32,9 @@ const Home = () => {
 
           <h5>Currently looking for opportunities to utilize my skills in collaborative and distributed environment.</h5>
         </div>
-        <div className="profilepic col-md-3">
+        {/* <div className="profilepic col-md-3">
           <img src={require('../../assets/profile.jpg')} alt="profile" height='220px' width='140px'/>
-        </div>
+        </div> */}
         <div className="profileLinks col-md-3">
           <div className="github row">
             <a href="https://github.com/shreyas710" target='_blank' rel='noreferrer noopener'>
