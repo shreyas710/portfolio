@@ -60,14 +60,14 @@
     color: antiquewhite;
 }
 
-.links {
+.projectlinks {
     padding-top: 20px;
     font-size: 18px;
     font-weight: 200;
 }
 
 
-.links a {
+.projectlinks a {
     text-decoration: underline;
     text-underline-offset: 4px;
     color: antiquewhite;
@@ -75,20 +75,20 @@
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.links a::after {
+.projectlinks a::after {
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 
-.links a:hover {
+.projectlinks a:hover {
     cursor: pointer;
     color: #f1356d;
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.links a:hover::after {
+.projectlinks a:hover::after {
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }

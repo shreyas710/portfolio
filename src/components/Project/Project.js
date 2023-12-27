@@ -88,7 +88,7 @@ const Project = () => {
                       <span>Tech Stack: <br /></span>{project.techStack}
                     </div>
                   </div>
-                  <div className="links row">
+                  <div className="projectlinks row">
                     {
                       project.projectLink && 
                       <div className="col-4">
