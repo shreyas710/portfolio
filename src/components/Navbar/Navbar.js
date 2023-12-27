@@ -22,12 +22,12 @@ const Navbar = () => {
         <img src={require("../../assets/hamburger-menu.png")} width="60%" alt='hamburger img'/>
       </div>
       
-      <div className="mobile-nav" style={{display: displayNav, color: "antiquewhite", marginTop: "200px"}}>
+      <div className="mobile-nav" style={{display: displayNav, color: "antiquewhite", marginTop: "200px", transition: "all 0.6s"}}>
         <div className='links'>
-          <HashLink smooth onClick={() => window.scrollTo(0,0)}>Home</HashLink>
-          <HashLink smooth to='#experiences'>Experiences</HashLink>
-          <HashLink smooth to='#projects'>Projects</HashLink>
-          <HashLink smooth to='#contact'>Contact Me</HashLink>
+          <HashLink smooth onClick={() => {window.scrollTo(0,0); toggleNav()}}>Home</HashLink>
+          <HashLink smooth onClick={() => toggleNav()} to='#experiences'>Experiences</HashLink>
+          <HashLink smooth onClick={() => toggleNav()} to='#projects'>Projects</HashLink>
+          <HashLink smooth onClick={() => toggleNav()} to='#contact'>Contact Me</HashLink>
         </div>
       </div>
 
