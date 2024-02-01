@@ -63,11 +63,11 @@ const Contact = () => {
         <form className='mailMe' onSubmit={(e) => handleSubmit(e)}>
           <div className="form-group">
             <label htmlFor="exampleFormControlInput2">Your Name</label>
-            <input placeholder='John Doe' required value={name} onChange={(e) => setName(e.target.value)} type="text" className="form-control" id="exampleFormControlInput2"/>
+            <input required value={name} onChange={(e) => setName(e.target.value)} type="text" className="form-control" id="exampleFormControlInput2"/>
           </div>
           <div className="form-group">
             <label htmlFor="exampleFormControlInput1">Your Email</label>
-            <input required value={emailID} onChange={(e) => setEmailID(e.target.value)} type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
+            <input required value={emailID} onChange={(e) => setEmailID(e.target.value)} type="email" className="form-control" id="exampleFormControlInput1"/>
           </div>
           <div className="form-group">
             <label htmlFor="exampleFormControlTextarea1">Message</label>
