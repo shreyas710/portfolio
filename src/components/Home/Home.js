@@ -36,28 +36,27 @@ const Home = () => {
           <br />
           <br />
           <br />
+          <br />
+          <br />
         </div>
         <div className="profileLinks row">
           <div className="github col-1">
             <a href="https://github.com/shreyas710" target='_blank' rel='noreferrer noopener'>
-             <img src={require("../../assets/github-antiquewhite.png")} width={"35px"} height={"35px"} alt="" />
+             <img src={require("../../assets/github.png")} width={"30px"} height={"30px"} alt="github" />
             </a>
           </div>
           <div className="linkedin col-1">
             <a href="https://www.linkedin.com/in/shreyasnk532" target='_blank' rel='noreferrer noopener'>
-             <img src={require("../../assets/linkedin-antiquewhite.png")} width={"35px"} height={"35px"} alt="" />
+             <img src={require("../../assets/linkedin.png")} width={"30px"} height={"30px"} alt="linkedin" />
             </a>
           </div>
           <div className="mail col-1">
             <a href="mailto:shreyasnk532@gmail.com" target='_blank' rel='noreferrer noopener'>
-             <img src={require("../../assets/envelope-solid-antiquewhite.png")} width={"35px"} height={"35px"} alt="" />
+             <img src={require("../../assets/email.png")} width={"30px"} height={"30px"} alt="" />
             </a>
           </div>
         </div>
       </div>
-
-      <br />
-      <br />
 
       <div className="resumeButton row">
         <a href= 'https://drive.google.com/file/d/1B0BZ53MvsyGE_11tdUMvua9BkX41XqOD/view?usp=sharing' target='_blank' rel='noreferrer noopener' type='button'>
