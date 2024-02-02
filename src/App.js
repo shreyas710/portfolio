@@ -18,8 +18,8 @@ function App() {
           <Experience/>
           <Project/>
           <Contact/>
+          <Footer/>
         </div>
-        <Footer/>
     </div>
   );
 }
