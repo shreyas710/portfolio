@@ -41,7 +41,7 @@ const Home = () => {
             </a>
           </div>
           <div className="mail col-1">
-            <a href="mailto:shreyask@usc.edu" target='_blank' rel='noreferrer noopener'>
+            <a href="mailto:shreyasnk532@gmail.com" target='_blank' rel='noreferrer noopener'>
              <img src={require("../../assets/envelope-solid-antiquewhite.png")} width={"40px"} height={"40px"} alt="" />
             </a>
           </div>
