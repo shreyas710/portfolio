@@ -30,17 +30,17 @@ const Home = () => {
 
         </div>
         <div className="profileLinks row">
-          <div className="github col-md-1">
+          <div className="github col-1">
             <a href="https://github.com/shreyas710" target='_blank' rel='noreferrer noopener'>
              <img src={require("../../assets/github-antiquewhite.png")} width={"40px"} height={"40px"} alt="" />
             </a>
           </div>
-          <div className="linkedin col-md-1">
+          <div className="linkedin col-1">
             <a href="https://www.linkedin.com/in/shreyasnk532" target='_blank' rel='noreferrer noopener'>
              <img src={require("../../assets/linkedin-antiquewhite.png")} width={"40px"} height={"40px"} alt="" />
             </a>
           </div>
-          <div className="mail col-md-1">
+          <div className="mail col-1">
             <a href="mailto:shreyask@usc.edu" target='_blank' rel='noreferrer noopener'>
              <img src={require("../../assets/envelope-solid-antiquewhite.png")} width={"40px"} height={"40px"} alt="" />
             </a>
