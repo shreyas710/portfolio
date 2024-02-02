@@ -1,8 +1,6 @@
 import React from 'react';
 import './Home.css'
 import { TypeAnimation } from 'react-type-animation';
-import CIcon from '@coreui/icons-react';
-import { cibGithub, cibLinkedinIn } from '@coreui/icons';
 
 const Home = () => {
 
@@ -22,7 +20,7 @@ const Home = () => {
       
 
       <div className="extra row">
-        <div className="aboutme col-md-9">
+        <div className="aboutme col-md-12 ">
           <h5>I am a Computer Science Graduate Student at the University of Southern California.<br></br>
           I have a good grasp of Data Structures and Algorithms. I have good experience in the fields of <br />frontend and backend development.</h5>
 
@@ -30,21 +28,22 @@ const Home = () => {
           <br />
           <br />
 
-          <h5>Currently looking for opportunities to utilize my skills in collaborative and distributed environment.</h5>
         </div>
-        {/* <div className="profilepic col-md-3">
-          <img src={require('../../assets/profile.jpg')} alt="profile" height='220px' width='140px'/>
-        </div> */}
-        <div className="profileLinks col-md-3">
-          <div className="github row">
+        <div className="profileLinks row">
+          <div className="github col-md-1">
             <a href="https://github.com/shreyas710" target='_blank' rel='noreferrer noopener'>
-            <CIcon style={{height: '25px', width: '25px'}} icon={cibGithub}/>
-            <p>GitHub</p></a>
+             <img src={require("../../assets/github-antiquewhite.png")} width={"40px"} height={"40px"} alt="" />
+            </a>
           </div>
-          <div className="linkedin row">
+          <div className="linkedin col-md-1">
             <a href="https://www.linkedin.com/in/shreyasnk532" target='_blank' rel='noreferrer noopener'>
-            <CIcon style={{height: '25px', width: '25px'}}  icon={cibLinkedinIn}/>
-            <p>LinkedIn</p></a>
+             <img src={require("../../assets/linkedin-antiquewhite.png")} width={"40px"} height={"40px"} alt="" />
+            </a>
+          </div>
+          <div className="mail col-md-1">
+            <a href="mailto:shreyask@usc.edu" target='_blank' rel='noreferrer noopener'>
+             <img src={require("../../assets/envelope-solid-antiquewhite.png")} width={"40px"} height={"40px"} alt="" />
+            </a>
           </div>
         </div>
       </div>

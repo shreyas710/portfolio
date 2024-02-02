@@ -49,49 +49,101 @@
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.github a, .linkedin a {
+.github a, .linkedin a, .mail a {
     text-decoration: underline;
     text-underline-offset: 4px;
     color: antiquewhite;
 }
 
-.github a p, .linkedin a p {
-    padding-left: 5px;
-    color: antiquewhite;
-    display: inline;
-}
-
-.profileLinks .linkedin {
-    margin-top: 10px;
-}
-
-.profileLinks a p {
+.github img{
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.profileLinks a p::after {
+.github img::after {
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.profileLinks a p:hover{
-    cursor: pointer;
-    color: #f1355d;
+.github img:hover {
+    opacity: 0.8;
+    content: url(/src/assets/github.png);
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.profileLinks a p:hover::after {
+.github img:hover::after {
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.profileLinks {
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-end;
-    align-items: flex-start;
+.github img{
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.github img::after {
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.github img:hover {
+    opacity: 0.7;
+    content: url(/src/assets/github.png);
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.github img:hover::after {
+    content: url(/src/assets/github-antiquewhite.png);
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.linkedin img{
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.linkedin img::after {
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.linkedin img:hover {
+    opacity: 0.7;
+    content: url(/src/assets/linkedin.png);
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.linkedin img:hover::after {
+    content: url(/src/assets/linkedin-antiquewhite.png);
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.mail img{
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.mail img::after {
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.mail img:hover {
+    opacity: 0.7;
+    content: url(/src/assets/envelope-solid.png);
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.mail img:hover::after {
+    content: url(/src/assets/envelope-solid-antiquewhite.png);
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .resumeButton {
@@ -132,7 +184,13 @@
     .profilepic {
         display: none;
     }
-    .profileLinks {
-        margin-top: 20px !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .profileLinks .linkedin {
+        margin-top: 20px;
+    }
+    .profileLinks .mail {
+        margin-top: 20px;
     }
 }
