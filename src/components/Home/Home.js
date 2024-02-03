@@ -1,8 +1,21 @@
 import React from 'react';
 import './Home.css'
 import { TypeAnimation } from 'react-type-animation';
+import { Cloudinary } from "@cloudinary/url-gen";
+import { AdvancedImage } from '@cloudinary/react';
 
 const Home = () => {
+
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: 'dvuknw9qw'
+    }
+  });
+
+  const profileImg = cld.image('docs/models-4'); 
+  const githubLogo = cld.image('docs/models');
+  const linkedinLogo = cld.image('docs/models-3');
+  const instaLogo = cld.image('docs/models-2');
 
   return (
     <div className='home container'>
@@ -41,23 +54,23 @@ const Home = () => {
         </div>
 
         <div className="profilepic col-md-6">
-          <img src={require("../../assets/profile.png")} alt="i_look_like_this" height={"400px"}/>
+          <AdvancedImage cldImg={profileImg} height={"400px"}/>
         </div>
       </div>
       <div className="profileLinks row">
           <div className="github col-1">
             <a href="https://github.com/shreyas710" target='_blank' rel='noreferrer noopener'>
-             <img src={require("../../assets/github.png")} width={"30px"} height={"30px"} alt="github" />
+              <AdvancedImage cldImg={githubLogo} width={"30px"} height={"30px"} alt="github"/>
             </a>
           </div>
           <div className="linkedin col-1">
             <a href="https://www.linkedin.com/in/shreyasnk532" target='_blank' rel='noreferrer noopener'>
-             <img src={require("../../assets/linkedin.png")} width={"30px"} height={"30px"} alt="linkedin" />
+              <AdvancedImage cldImg={linkedinLogo} width={"30px"} height={"30px"} alt="linkedin"/>
             </a>
           </div>
           <div className="mail col-1">
             <a href="https://www.instagram.com/shr3yas.ku1karni" target='_blank' rel='noreferrer noopener'>
-             <img src={require("../../assets/instagram.png")} width={"30px"} height={"30px"} alt="" />
+              <AdvancedImage cldImg={instaLogo} width={"30px"} height={"30px"} alt="instagram"/>
             </a>
           </div>
         </div>

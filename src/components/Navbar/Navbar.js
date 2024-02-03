@@ -1,10 +1,20 @@
 import React, { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import './Navbar.css'
+import { Cloudinary } from "@cloudinary/url-gen";
+import { AdvancedImage } from '@cloudinary/react';
 
 const Navbar = () => {
 
   const [displayNav, setDisplayNav] = useState("none");
+
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: 'dvuknw9qw'
+    }
+  });
+
+  const hamburger = cld.image('docs/models-5'); 
 
   const toggleNav = () => {
     if(displayNav === "none") {
@@ -19,7 +29,7 @@ const Navbar = () => {
       <HashLink smooth onClick={() => window.scrollTo(0,0)}><h1>SK</h1></HashLink>
      
       <div className="mobile-container" style={{color: "antiquewhite"}} onClick={() => toggleNav()}>
-        <img src={require("../../assets/hamburger-menu.png")} width="60%" alt='hamburger img'/>
+        <AdvancedImage cldImg={hamburger} width="60%" alt='hamburger img'/>
       </div>
       
       <div className="mobile-nav" style={{display: displayNav, color: "antiquewhite", marginTop: "200px", transition: "all 0.6s"}}>
