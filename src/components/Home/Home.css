@@ -10,16 +10,31 @@
     color: antiquewhite;
 }
 
-.home .profilepic {
-    text-align: center;
+.home .profilepic img {
+    box-shadow: 10px 0 50px black;
+    border-radius: 15px;
+    position: absolute;
+    right: 20%;
+    border-radius: 25px;
+    transition-duration: 1s;
+    animation: animate 1s;
 }
 
-.profilepic img {
-    box-shadow: 0 0 50px black;
-    border-radius: 15px;
-    -webkit-transform: scale(1.25, 1.25);
-    transform: scale(1.25, 1.25);
-}
+ 
+  @keyframes animate{
+    from{ 
+    transform:rotate(0deg);
+    } 
+    to{
+    transform:rotate(0deg);
+    }
+    from{ 
+    right:0;
+    } 
+    to{
+    right:20%;
+    }
+  } 
 
 .home .resumeButton {
     margin-top: 40px;
@@ -150,7 +165,7 @@
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
     .profilepic {
         display: none;
     }

@@ -12,7 +12,7 @@ const Home = () => {
       
 
       <div className="extra row">
-        <div className="aboutme col-md-12 ">
+        <div className="aboutme col-md-6">
           <TypeAnimation
             sequence={[
                 'Software Engineer',
@@ -32,14 +32,19 @@ const Home = () => {
           <br />
           <br />
           <h5>I am a Computer Science Graduate Student at the University of Southern California.<br></br>
-          I have a good grasp of Data Structures and Algorithms. I have good experience in the fields of <br />frontend and backend development.</h5>
+          I have a good grasp of Data Structures and Algorithms. I have good experience in the fields of frontend and backend development.</h5>
           <br />
           <br />
           <br />
           <br />
           <br />
         </div>
-        <div className="profileLinks row">
+
+        <div className="profilepic col-md-6">
+          <img src={require("../../assets/profile.png")} alt="i_look_like_this" height={"400px"}/>
+        </div>
+      </div>
+      <div className="profileLinks row">
           <div className="github col-1">
             <a href="https://github.com/shreyas710" target='_blank' rel='noreferrer noopener'>
              <img src={require("../../assets/github.png")} width={"30px"} height={"30px"} alt="github" />
@@ -50,13 +55,12 @@ const Home = () => {
              <img src={require("../../assets/linkedin.png")} width={"30px"} height={"30px"} alt="linkedin" />
             </a>
           </div>
-          <div className="mail col-1">
+          {/* <div className="mail col-1">
             <a href="mailto:shreyasnk532@gmail.com" target='_blank' rel='noreferrer noopener'>
              <img src={require("../../assets/email.png")} width={"30px"} height={"30px"} alt="" />
             </a>
-          </div>
+          </div> */}
         </div>
-      </div>
 
       <div className="resumeButton row">
         <a href= 'https://drive.google.com/file/d/1B0BZ53MvsyGE_11tdUMvua9BkX41XqOD/view?usp=sharing' target='_blank' rel='noreferrer noopener' type='button'>
