@@ -54,7 +54,7 @@ const Home = () => {
         </div>
 
         <div className="profilepic col-md-6">
-          <AdvancedImage cldImg={profileImg} height={"400px"}/>
+          <AdvancedImage cldImg={profileImg} height={"350px"}/>
         </div>
       </div>
       <div className="profileLinks row">

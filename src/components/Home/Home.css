@@ -13,28 +13,10 @@
 .home .profilepic img {
     box-shadow: 10px 0 50px black;
     border-radius: 15px;
-    position: absolute;
-    right: 20%;
+    margin-left: 100px;
     border-radius: 25px;
     transition-duration: 1s;
-    animation: animate 1s;
 }
-
- 
-  @keyframes animate{
-    from{ 
-    transform:rotate(0deg);
-    } 
-    to{
-    transform:rotate(0deg);
-    }
-    from{ 
-    right:0;
-    } 
-    to{
-    right:20%;
-    }
-  } 
 
 .home .resumeButton {
     margin-top: 40px;
