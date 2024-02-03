@@ -55,11 +55,11 @@ const Home = () => {
              <img src={require("../../assets/linkedin.png")} width={"30px"} height={"30px"} alt="linkedin" />
             </a>
           </div>
-          {/* <div className="mail col-1">
-            <a href="mailto:shreyasnk532@gmail.com" target='_blank' rel='noreferrer noopener'>
-             <img src={require("../../assets/email.png")} width={"30px"} height={"30px"} alt="" />
+          <div className="mail col-1">
+            <a href="https://www.instagram.com/shr3yas.ku1karni" target='_blank' rel='noreferrer noopener'>
+             <img src={require("../../assets/instagram.png")} width={"30px"} height={"30px"} alt="" />
             </a>
-          </div> */}
+          </div>
         </div>
 
       <div className="resumeButton row">
