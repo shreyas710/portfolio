@@ -76,7 +76,7 @@ const Home = () => {
         </div>
 
       <div className="resumeButton row">
-        <a href= 'https://drive.google.com/file/d/1B0BZ53MvsyGE_11tdUMvua9BkX41XqOD/view?usp=sharing' target='_blank' rel='noreferrer noopener' type='button'>
+        <a href= 'https://drive.google.com/file/d/15jMKmasPE0aAIiwbdyZOYV1bLFLDG-vk/view?usp=sharing' target='_blank' rel='noreferrer noopener' type='button'>
           View Resume
         </a>
       </div>
