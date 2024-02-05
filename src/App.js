@@ -5,11 +5,31 @@ import Experience from './components/Experience/Experience';
 import Project from './components/Project/Project';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import { useEffect, useState } from 'react';
 import 'jquery/dist/jquery.min.js'; // Have to install and import jQuery because of bootstrap modal's dependency
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function App() {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500)
+  })
+
+  if(loading) {
+    return (
+      <div className="App loadingContent" style={{color: 'antiquewhite'}}>
+        <div className="spinner-border" role="status" style={{color: '#f1356d', width: '50px', height: '50px'}}>
+          <span className="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    )
+  } 
+
   return (
     <div className="App">
         <Navbar/>
