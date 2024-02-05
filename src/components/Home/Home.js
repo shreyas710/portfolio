@@ -13,7 +13,7 @@ const Home = () => {
   });
 
   const profileImg = cld.image('docs/models-4'); 
-  const githubLogo = cld.image('docs/models');
+  const githubLogo = cld.image('docs/models-6');
   const linkedinLogo = cld.image('docs/models-3');
   const instaLogo = cld.image('docs/models-2');
 
