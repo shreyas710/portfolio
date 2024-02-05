@@ -23,7 +23,6 @@ const Home = () => {
         <p style={{fontSize: "5em"}}>Shreyas Kulkarni.</p>
       </div>
       
-
       <div className="extra row">
         <div className="aboutme col-md-6">
           <TypeAnimation
@@ -46,15 +45,9 @@ const Home = () => {
           <br />
           <h5>I am a Computer Science Graduate Student at the University of Southern California.<br></br>
           I have a good grasp of Data Structures and Algorithms. I have good experience in the fields of frontend and backend development.</h5>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
         </div>
-
         <div className="profilepic col-md-6">
-          <AdvancedImage cldImg={profileImg} height={"350px"}/>
+          <AdvancedImage cldImg={profileImg}/>
         </div>
       </div>
       <div className="profileLinks row">

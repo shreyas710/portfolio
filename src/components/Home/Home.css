@@ -1,5 +1,6 @@
 .animation p{
     background: -webkit-linear-gradient(135deg,#fc466b,#3f5efb);
+    background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -10,12 +11,16 @@
     color: antiquewhite;
 }
 
+.home .profilepic {
+    text-align: center;
+}
+
 .home .profilepic img {
     box-shadow: 10px 0 50px black;
     border-radius: 15px;
-    margin-left: 100px;
     border-radius: 25px;
     transition-duration: 1s;
+    height: 350px;
 }
 
 .home .resumeButton {
@@ -147,11 +152,20 @@
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-@media only screen and (max-width: 1200px) {
-    .profilepic {
-        display: none;
+@media only screen and (max-width: 990px) {
+    .home .profilepic img {
+        height: 300px;
     }
 }
+
+@media only screen and (max-width: 767px) {
+    .home .profilepic {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+}
+
 
 @media only screen and (max-width: 1197px) {
     .profileLinks .linkedin {
