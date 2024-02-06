@@ -29,7 +29,7 @@ const Navbar = () => {
       <HashLink smooth onClick={() => window.scrollTo(0,0)}><h1>SK</h1></HashLink>
      
       <div className="mobile-container" style={{color: "antiquewhite"}} onClick={() => toggleNav()}>
-        <AdvancedImage cldImg={hamburger} width="60%" alt='hamburger img'/>
+        <AdvancedImage loading="lazy" cldImg={hamburger} width="60%" alt='hamburger img'/>
       </div>
       
       <div className="mobile-nav" style={{display: displayNav, color: "antiquewhite", marginTop: "200px", transition: "all 0.6s"}}>

@@ -43,27 +43,29 @@ const Home = () => {
           <br />
           <br />
           <br />
-          <h5>I am a Computer Science Graduate Student at the University of Southern California.<br></br>
-          I have a good grasp of Data Structures and Algorithms. I have good experience in the fields of frontend and backend development.</h5>
+          <h5>I am a Computer Science Graduate Student at the University of Southern California.</h5>
+              <div style={{marginTop: "50px", marginBottom: "20px"}}>
+              <h5>I have a good grasp of Data Structures and Algorithms. I have good experience in the fields of frontend and backend development.</h5>                
+              </div>
         </div>
         <div className="profilepic col-md-6">
-          <AdvancedImage cldImg={profileImg}/>
+          <AdvancedImage loading="lazy" cldImg={profileImg}/>
         </div>
       </div>
       <div className="profileLinks row">
           <div className="github col-1">
             <a href="https://github.com/shreyas710" target='_blank' rel='noreferrer noopener'>
-              <AdvancedImage cldImg={githubLogo} width={"30px"} height={"30px"} alt="github"/>
+              <AdvancedImage loading="lazy" cldImg={githubLogo} width={"30px"} height={"30px"} alt="github"/>
             </a>
           </div>
           <div className="linkedin col-1">
             <a href="https://www.linkedin.com/in/shreyasnk532" target='_blank' rel='noreferrer noopener'>
-              <AdvancedImage cldImg={linkedinLogo} width={"30px"} height={"30px"} alt="linkedin"/>
+              <AdvancedImage loading="lazy" cldImg={linkedinLogo} width={"30px"} height={"30px"} alt="linkedin"/>
             </a>
           </div>
           <div className="mail col-1">
             <a href="https://www.instagram.com/shr3yas.ku1karni" target='_blank' rel='noreferrer noopener'>
-              <AdvancedImage cldImg={instaLogo} width={"30px"} height={"30px"} alt="instagram"/>
+              <AdvancedImage loading="lazy" cldImg={instaLogo} width={"30px"} height={"30px"} alt="instagram"/>
             </a>
           </div>
         </div>
