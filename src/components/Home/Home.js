@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from '@cloudinary/react';
 
-const Home = () => {
+const Home = ({darkMode}) => {
 
   const cld = new Cloudinary({
     cloud: {
@@ -13,9 +13,9 @@ const Home = () => {
   });
 
   const profileImg = cld.image('docs/models-4'); 
-  const githubLogo = cld.image('docs/models-6');
-  const linkedinLogo = cld.image('docs/models-3');
-  const instaLogo = cld.image('docs/models-2');
+  const githubLogo = darkMode ? cld.image('docs/models-6') : cld.image('docs/models-10');
+  const linkedinLogo = darkMode ? cld.image('docs/models-3') : cld.image('docs/models-11');
+  const instaLogo = darkMode ? cld.image('docs/models-2') : cld.image('docs/models-12');
 
   return (
     <div className='home container'>
@@ -23,7 +23,7 @@ const Home = () => {
         <p style={{fontSize: "5em"}}>Shreyas Kulkarni.</p>
       </div>
       
-      <div className="extra row">
+      <div className={(darkMode ? "extra" : "extra-light") + " row"}>
         <div className="aboutme col-md-6">
           <TypeAnimation
             sequence={[
@@ -70,7 +70,7 @@ const Home = () => {
           </div>
         </div>
 
-      <div className="resumeButton row">
+      <div className={(darkMode ? "resumeButton" : "resumeButton-light") + " row"}>
         <a href= 'https://drive.google.com/file/d/15jMKmasPE0aAIiwbdyZOYV1bLFLDG-vk/view?usp=sharing' target='_blank' rel='noreferrer noopener' type='button'>
           View Resume
         </a>

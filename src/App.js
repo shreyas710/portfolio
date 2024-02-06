@@ -13,6 +13,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 function App() {
 
   const [loading, setLoading] = useState(true);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
@@ -32,13 +33,13 @@ function App() {
 
   return (
     <div className="App">
-        <Navbar/>
-        <div className="content" id='home'>
-          <Home/>
-          <Experience/>
-          <Project/>
-          <Contact/>
-          <Footer/>
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode}/>
+        <div className={darkMode ? "content" : "content-light"} id='home'>
+          <Home darkMode={darkMode}/>
+          <Experience darkMode={darkMode}/>
+          <Project darkMode={darkMode}/>
+          <Contact darkMode={darkMode}/>
+          <Footer darkMode={darkMode}/>
         </div>
     </div>
   );

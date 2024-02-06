@@ -11,6 +11,12 @@
     color: antiquewhite;
 }
 
+.extra-light h5 {
+    font-weight: 300;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #222;
+}
+
 .home .profilepic {
     text-align: center;
 }
@@ -23,7 +29,7 @@
     height: 350px;
 }
 
-.home .resumeButton {
+.home .resumeButton, .home .resumeButton-light {
     margin-top: 40px;
     width: 170px;
     height: 50px;
@@ -40,20 +46,25 @@
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.home .resumeButton button:hover {
-    background-color: #f1355d;
-}
-
-.home .resumeButton button::after {
+.home .resumeButton-light button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: transparent;
+    color: #222;
+    border: 1px solid #f1355d;
+    border-radius: 5px;
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.github a, .linkedin a, .mail a {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    color: antiquewhite;
+.home .resumeButton button:hover, .home .resumeButton-light button:hover {
+    background-color: #f1355d;
 }
+
+.home .resumeButton button::after, .home .resumeButton-light button::after{
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
 
 .github img{
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -118,7 +129,7 @@
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.resumeButton {
+.resumeButton, .resumeButton-light {
     text-align: center;
 }
 
@@ -134,19 +145,31 @@
     padding-top: 9px;
 }
 
-.resumeButton a::after {
+.resumeButton-light a {
+    text-decoration: none;
+    font-size: large;
+    background-color: transparent;
+    color: #222;
+    border: 1px solid #f1355d;
+    border-radius: 10px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    padding-top: 9px;
+}
+
+.resumeButton a::after, .resumeButton-light a::after {
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.resumeButton a:hover {
+.resumeButton a:hover, .resumeButton-light a:hover {
     opacity: 0.5;
     border: 1px solid #f1355d;
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.resumeButton a:hover::after {
+.resumeButton a:hover::after, .resumeButton-light a:hover::after {
     opacity: 1;
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -160,7 +183,7 @@
 
 @media only screen and (max-width: 767px) {
     .home .profilepic {
-        margin-top: 50px;
+        margin-top: 20px;
         margin-bottom: 30px;
         text-align: left;
     }

@@ -5,6 +5,13 @@
     display: block;
 }
 
+.content-light {
+    margin-top: 80px;
+    background-color: #faebd7;
+    padding: 20px;
+    display: block;
+}
+
 .loadingContent {
     display: flex;
     align-items: center;
@@ -16,8 +23,4 @@
     right: 0;
     overflow: auto;
     background: #222;
-}
-
-.loadingText {
-    color: antiquewhite;
 }

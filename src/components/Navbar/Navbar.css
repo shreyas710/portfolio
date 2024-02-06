@@ -11,7 +11,36 @@
     z-index: 1000;
 }
 
+.navbar1-light {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #e0cdb4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 80px;
+    z-index: 1000;
+}
+
+.darkToggleBtn:hover {
+    cursor: pointer;
+}
+
+.darkToggleBtn {
+    width: 100%;
+}
+
+.darkToggleBtn img {
+    float: right;
+}
+
 .navbar1 a {
+    text-decoration: none;
+}
+
+.navbar1-light a {
     text-decoration: none;
 }
 
@@ -20,10 +49,23 @@
     font-size: 35px;
     color: antiquewhite;
     font-weight: bolder;
-    padding-top: 15px;
+}
+
+.navbar1-light h1 {
+    margin-left: 20px;
+    font-size: 35px;
+    color: #333;
+    font-weight: bolder;
 }
 
 .navbar1 .links {
+    font-size: 18px;
+    font-weight: 300;
+    display: flex;
+    list-style: none;
+}
+
+.navbar1-light .links {
     font-size: 18px;
     font-weight: 300;
     display: flex;
@@ -38,43 +80,51 @@
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.navbar1 .links a::after {
+.navbar1-light .links a {
+    text-decoration: none;
+    margin: 20px;
+    color: #333;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.navbar1 .links a::after, .navbar1-light .links a:after {
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 
-.navbar1 .links a:hover {
+.navbar1 .links a:hover, .navbar1-light .links a:hover {
     cursor: pointer;
     color: #f1356d;
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.navbar1 .links a:hover::after {
+.navbar1 .links a:hover::after, .navbar1-light .links a:hover::after {
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.navbar1 .mobile-container {
+.navbar1 .mobile-container, .navbar1-light .mobile-container {
     display: none;
 }
 
-.navbar1 .mobile-nav {
+.navbar1 .mobile-nav, .navbar1-light .mobile-nav {
     display: none;
 }
 
-.navbar1 .mobile-nav .links {
+.navbar1 .mobile-nav .links, .navbar1-light .mobile-nav .links {
     display: none;
 }
 
-@media only screen and (max-width: 580px) {
-    .navbar1 .links {
+@media only screen and (max-width: 700px) {
+    .navbar1 .links, .navbar1-light .links {
         display: none;
     }
-    .navbar1 .mobile-container {
+    .navbar1 .mobile-container, .navbar1-light .mobile-container {
         display: block;
-        margin-left: 300px;
+        margin-left: 30px;
     }
     .navbar1 .mobile-nav .links {
         display: flex;
@@ -82,17 +132,23 @@
         background-color: #333;
         border-radius: 0px 0px 10px 10px;
     }
-    .navbar1 .mobile-container:hover {
+    .navbar1-light .mobile-nav .links {
+        display: flex;
+        flex-direction: column;
+        background-color: #e0cdb4;
+        border-radius: 0px 0px 10px 10px;
+    }
+    .navbar1 .mobile-container:hover, .navbar1-light .mobile-container:hover {
         cursor: pointer;
     }
-    .navbar1 .mobile-nav .links {
+    .navbar1 .mobile-nav .links, .navbar1-light .mobile-nav .links {
         font-size: 18px;
         font-weight: 300;
         display: flex;
         list-style: none;
     }
 
-    .navbar1 .mobile-nav .links a {
+    .navbar1 .mobile-nav .links a{
         display: block;
         text-decoration: none;
         color: antiquewhite;
@@ -100,56 +156,79 @@
         transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
 
-    .navbar1 .mobile-nav .links a::after {
+    .navbar1-light .mobile-nav .links a {
+        display: block;
+        text-decoration: none;
+        color: #333;
+        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .navbar1 .mobile-nav .links a::after, .navbar1-light .mobile-nav .links a::after {
         -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
         transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
 
 
-    .navbar1 .mobile-nav .links a:hover {
+    .navbar1 .mobile-nav .links a:hover, .navbar1-light .mobile-nav .links a:hover {
         cursor: pointer;
         color: #f1356d;
         -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
         transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
 
-    .navbar1 .mobile-nav .links a:hover::after {
+    .navbar1 .mobile-nav .links a:hover::after, .navbar1-light .mobile-nav .links a:hover::after {
         -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
         transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
 }
 
+@media only screen and (max-width: 685px) {
+    .navbar1 .mobile-container, .navbar1-light .mobile-container {
+        margin-left: 30px;
+        transition: all 0.1s;
+    }
+}
+
+@media only screen and (max-width: 685px) {
+    .navbar1 .mobile-container, .navbar1-light .mobile-container {
+        margin-left: 30px;
+        transition: all 0.1s;
+    }
+}
+
+
 @media only screen and (max-width: 580px) {
-    .navbar1 .mobile-container {
-        margin-left: 250px;
+    .navbar1 .mobile-container, .navbar1-light .mobile-container {
+        margin-left: 30px;
         transition: all 0.1s;
     }
 }
 
 @media only screen and (max-width: 550px) {
-    .navbar1 .mobile-container {
-        margin-left: 200px;
+    .navbar1 .mobile-container, .navbar1-light .mobile-container {
+        margin-left: 30px;
         transition: all 0.1s;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .navbar1 .mobile-container {
-        margin-left: 150px;
+    .navbar1 .mobile-container, .navbar1-light .mobile-container {
+        margin-left: 30px;
         transition: all 0.1s;
     }
 }
 
 @media only screen and (max-width: 430px) {
-    .navbar1 .mobile-container {
-        margin-left: 100px;
+    .navbar1 .mobile-container, .navbar1-light .mobile-container {
+        margin-left: 30px;
         transition: all 0.1s;
     }
 }
 
 @media only screen and (max-width: 380px) {
-    .navbar1 .mobile-container {
-        margin-left: 50px;
+    .navbar1 .mobile-container, .navbar1-light .mobile-container {
+        margin-left: 30px;
         transition: all 0.1s;
     }
 }
