@@ -1,8 +1,8 @@
 import React from 'react';
 import './Footer.css'
 
-const Footer = () => (
-  <div className='footer container-fluid row'>
+const Footer = ({darkMode}) => (
+  <div className={(darkMode ? "footer" : "footer-light") + " row"}>
     <div className='col'></div>
     <div className='col-md-6'>
     Made with ❤️ using <span>ReactJS</span>

@@ -9,6 +9,12 @@
     margin-top: 30px;
 }
 
+.contact .contactContent-light {
+    text-align: center;
+    color: #222;
+    margin-top: 30px;
+}
+
 .mailMe {
     width: 50%;
     margin: 0 auto;
@@ -25,8 +31,12 @@
     margin-top: 20px;
 }
 
-form label {
+.contactContent form label {
     color: antiquewhite;
+}
+
+.contactContent-light form label {
+    color: #222;
 }
 
 .submitButton {

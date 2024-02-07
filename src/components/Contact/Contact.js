@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './Contact.css';
 import emailjs from '@emailjs/browser';
 
-const Contact = () => {
+const Contact = ({darkMode}) => {
 
   let title = `<contact me>`
 
@@ -59,23 +59,23 @@ const Contact = () => {
       <div className="heading row">
         <h3>{title}</h3>
       </div>
-      <div className="contactContent">
+      <div className={darkMode ? "contactContent" : "contactContent-light"}>
         <form className='mailMe' onSubmit={(e) => handleSubmit(e)}>
           <div className="form-group">
             <label htmlFor="exampleFormControlInput2">Your Name</label>
-            <input required value={name} onChange={(e) => setName(e.target.value)} type="text" className="form-control" id="exampleFormControlInput2"/>
+            <input style={{backgroundColor: darkMode ? '#333' : "#e0cdb4", color: darkMode ? "antiquewhite" : "#222"}} required value={name} onChange={(e) => setName(e.target.value)} type="text" className="form-control" id="exampleFormControlInput2"/>
           </div>
           <div className="form-group">
             <label htmlFor="exampleFormControlInput1">Your Email</label>
-            <input required value={emailID} onChange={(e) => setEmailID(e.target.value)} type="email" className="form-control" id="exampleFormControlInput1"/>
+            <input style={{backgroundColor: darkMode ? '#333' : "#e0cdb4", color: darkMode ? "antiquewhite" : "#222"}} required value={emailID} onChange={(e) => setEmailID(e.target.value)} type="email" className="form-control" id="exampleFormControlInput1"/>
           </div>
           <div className="form-group">
             <label htmlFor="exampleFormControlTextarea1">Message</label>
-            <textarea required value={body} onChange={(e) => setBody(e.target.value)} className="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+            <textarea style={{backgroundColor: darkMode ? '#333' : "#e0cdb4", color: darkMode ? "antiquewhite" : "#222"}} required value={body} onChange={(e) => setBody(e.target.value)} className="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
           </div>
           <button disabled={btnDis} type="submit" className="submitButton">
-            <div className="button__progress" style={{width: progress}}></div>
-            <div className="button__text">{buttonText}</div>
+            <div className="button__progress" style={{width: progress, color: darkMode ? "antiquewhite" : "#222"}}></div>
+            <div className="button__text" style={{color: darkMode ? "antiquewhite" : "#222"}}>{buttonText}</div>
           </button>
         </form>
       </div>
