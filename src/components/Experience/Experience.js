@@ -1,9 +1,7 @@
 import React from 'react';
 import './Experience.css';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
 
-const Experience = () => {
+const Experience = ({darkMode}) => {
 
   let title = `<experiences>`
 
@@ -50,10 +48,9 @@ const Experience = () => {
       <div className="heading row">
         <h3>{title}</h3>
       </div>
-        <Carousel showThumbs={false}>
         {exps.map((exp) => {
           return (
-            <div key={exp.id} className="expcontent">
+            <div style={{marginTop: "40px"}} key={exp.id} className={darkMode ? "expcontent" : "expcontent-light"}>
               <div className="companyStart row">
                 <div className="roleName col-6">
                 {exp.role}
@@ -69,7 +66,7 @@ const Experience = () => {
               </div>
               <br />
               <div className="descript row">
-                <ul style={{listStyleType: 'square'}}>
+                <ul style={{listStyleType: 'disc'}}>
                   {exp.desc.map((de) => {
                     return (
                       <li key={de.id}>{de.text}</li>
@@ -80,7 +77,6 @@ const Experience = () => {
             </div>
           )
         })}
-        </Carousel>
     </div>
   )
 };

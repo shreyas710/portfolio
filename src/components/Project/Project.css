@@ -7,28 +7,43 @@
     color: antiquewhite;
 }
 
-.projectImg {
-    padding-top: 20px;
-}
-
 .accordion {
     padding-top: 20px;
 }
 
 .accordion-header button {
-    background-color: #333 !important;
-    color: antiquewhite !important;
     font-size: 35px;
     font-weight: 500;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.accordion-body {
+.enableDark button {
     background-color: #333 !important;
+    color: antiquewhite !important;
 }
 
-.accordion-body .description ul li {
+.enableLight button {
+    background-color: #e0cdb4 !important;
+    color: #222 !important;
+}
+
+.bodyDark {
+    background-color: #222 !important;
+}
+
+.bodyLight {
+    background-color: antiquewhite !important;
+}
+
+.bodyDark .description ul li {
     color: antiquewhite;
+    font-size: 18px;
+    font-weight: 200;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bodyLight .description ul li {
+    color: #222;
     font-size: 18px;
     font-weight: 200;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -38,12 +53,13 @@
     color: #f1356d;
 }
 
-.projectImg img {
-    border-radius: 20px;
-}
-
 .techStack {
     color: antiquewhite;
+    font-size: 18px;
+}
+
+.techStack-light {
+    color: #222;
     font-size: 18px;
 }
 
@@ -52,15 +68,12 @@
     font-size: 18px;
 }
 
-.projectLink, .sourceCodeLink {
-    color: antiquewhite;
+.techStack-light span {
+    color: #f1356d;
+    font-size: 18px;
 }
 
-.projectHead, .projectDesc{
-    color: antiquewhite;
-}
-
-.projectlinks {
+.projectlinks, .projectlinks-light {
     padding-top: 20px;
     font-size: 18px;
     font-weight: 200;
@@ -75,20 +88,28 @@
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.projectlinks a::after {
+.projectlinks-light a {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: #222;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.projectlinks a::after, .projectlinks-light a::after {
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 
-.projectlinks a:hover {
+.projectlinks a:hover, .projectlinks-light a:hover {
     cursor: pointer;
     color: #f1356d;
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.projectlinks a:hover::after {
+.projectlinks a:hover::after, .projectlinks-light a:hover::after {
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }

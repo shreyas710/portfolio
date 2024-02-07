@@ -5,18 +5,25 @@
 }
 
 .expcontent {
-    margin: 30px;
-    margin-left: 40px;
     font-weight: 200;
     color: antiquewhite;
 }
 
+.expcontent-light {
+    font-weight: 200;
+    color: #222;
+}
 
-.companyName, .roleName, .startDate, .descript ul li {
+
+.expcontent .companyName, .expcontent .roleName, .expcontent .startDate, .expcontent .descript ul li {
     color: antiquewhite;
 }
 
-.expcontent .companyName, .roleName {
+.expcontent-light .companyName, .expcontent-light .roleName, .expcontent-light .startDate, .expcontent-light .descript ul li {
+    color: #222;
+}
+
+.companyName, .roleName {
     text-align: left;
 }
 

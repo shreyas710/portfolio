@@ -1,7 +1,7 @@
 import React from 'react';
 import './Project.css'
 
-const Project = () => {
+const Project = ({darkMode}) => {
 
   let title = `<projects>`
 
@@ -68,15 +68,15 @@ const Project = () => {
         {projects.map(project => {
           return (
             <div key={project.id} className="accordion-item">
-              <h2 className="accordion-header" id={'heading' + project.id}>
+              <h2 className={"accordion-header " + (darkMode ? "enableDark" : "enableLight")} id={'heading' + project.id}>
                 <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target={'#collapse' + project.id} aria-expanded="true" aria-controls={'collapse' + project.id}>
                   {project.title}
                 </button>
               </h2>
               <div id={'collapse' + project.id} className={"accordion-collapse collapse " + project.show} aria-labelledby={'heading' + project.id} data-bs-parent="#accordionExample">
-                <div className="accordion-body">
+                <div className={"accordion-body " + (darkMode ? "bodyDark" : "bodyLight")}>
                   <div className="description">
-                    <ul style={{listStyleType: 'square'}}>
+                    <ul style={{listStyleType: 'disc'}}>
                       {project.desc.map((de) => {
                         return (
                           <li key={de.id}>{de.text}</li>
@@ -84,11 +84,11 @@ const Project = () => {
                       })}
                     </ul>
 
-                    <div className="techStack">
+                    <div className={darkMode ? "techStack": "techStack-light"}>
                       <span>Tech Stack: <br /></span>{project.techStack}
                     </div>
                   </div>
-                  <div className="projectlinks row">
+                  <div className={(darkMode ? "projectlinks" : "projectlinks-light") + " row"} >
                     {
                       project.projectLink && 
                       <div className="col-4">
