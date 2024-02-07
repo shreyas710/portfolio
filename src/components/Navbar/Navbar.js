@@ -28,8 +28,8 @@ const Navbar = ({darkMode, setDarkMode}) => {
   return (
     <nav className={(darkMode ? "navbar1 " : "navbar1-light ") + "container-fluid"} >
       <HashLink smooth onClick={() => window.scrollTo(0,0)}><h1 style={{marginBottom: "0px"}}>SK</h1></HashLink>
-      <div className='darkToggleBtn' onClick={() => setDarkMode(!darkMode)}>
-        <AdvancedImage loading="lazy" cldImg={darkToggle} width={"30px"} height={"30px"} alt='dark toggle img'/>
+      <div className='darkToggleBtn'>
+        <AdvancedImage onClick={() => setDarkMode(!darkMode)} loading="lazy" cldImg={darkToggle} width={"30px"} height={"30px"} alt='dark toggle img'/>
       </div>
       <div className="mobile-container row" style={{color: darkMode ? "antiquewhite" : "#333", marginRight: "30px"}} onClick={() => toggleNav()}>
         <div className="col-1">
