@@ -31,7 +31,7 @@ const Navbar = ({darkMode, setDarkMode}) => {
       <div className='darkToggleBtn'>
         <AdvancedImage onClick={() => setDarkMode(!darkMode)} loading="lazy" cldImg={darkToggle} width={"30px"} height={"30px"} alt='dark toggle img'/>
       </div>
-      <div className="mobile-container row" style={{color: darkMode ? "antiquewhite" : "#333", marginRight: "30px"}} onClick={() => toggleNav()}>
+      <div className="mobile-container row" style={{color: darkMode ? "antiquewhite" : "#333", marginRight: "20px"}} onClick={() => toggleNav()}>
         <div className="col-1">
         <AdvancedImage loading="lazy" cldImg={hamburger} width={"30px"} height={"30px"} alt='hamburger img'/>
         </div>
