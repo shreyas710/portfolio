@@ -1,0 +1,14 @@
+.scrollUp {
+    width: inherit;
+    position: fixed; 
+    right: 0; 
+    bottom: 50px; 
+    font-size: 3rem; 
+    z-index: 1; 
+}
+
+.scrollUp img {
+    float: right;
+    margin-right: 20px;
+    cursor: pointer; 
+}

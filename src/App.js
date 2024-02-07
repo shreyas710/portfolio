@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react';
 import 'jquery/dist/jquery.min.js'; // Have to install and import jQuery because of bootstrap modal's dependency
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import ScrollButton from './components/scrollButton/scrollButton';
 
 function App() {
 
@@ -56,6 +57,7 @@ function App() {
           <Contact darkMode={darkMode}/>
           <Footer darkMode={darkMode}/>
         </div>
+        <ScrollButton darkMode={darkMode}/>
     </div>
   );
 }
