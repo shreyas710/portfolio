@@ -9,6 +9,7 @@
     margin: 0 auto;
     height: 80px;
     z-index: 1000;
+    transition: background 1s;
 }
 
 .navbar1-light {
@@ -22,6 +23,7 @@
     margin: 0 auto;
     height: 80px;
     z-index: 1000;
+    transition: background 1s;
 }
 
 .darkToggleBtn {
@@ -53,6 +55,7 @@
     font-size: 35px;
     color: antiquewhite;
     font-weight: bolder;
+    transition: color 1s;
 }
 
 .navbar1-light h1 {
@@ -60,6 +63,7 @@
     font-size: 35px;
     color: #333;
     font-weight: bolder;
+    transition: color 1s;
 }
 
 .navbar1 .links {

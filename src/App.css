@@ -3,6 +3,7 @@
     background-color: #222;
     padding: 20px;
     display: block;
+    transition: background 1s;
 }
 
 .content-light {
@@ -10,6 +11,7 @@
     background-color: #faebd7;
     padding: 20px;
     display: block;
+    transition: background 1s;
 }
 
 .loadingContent {
