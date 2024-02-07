@@ -50,7 +50,7 @@ const Experience = ({darkMode}) => {
       </div>
         {exps.map((exp) => {
           return (
-            <div style={{marginTop: "40px"}} key={exp.id} className={darkMode ? "expcontent" : "expcontent-light"}>
+            <div style={{marginTop: exp.id === 1 ? "10px" : "80px"}} key={exp.id} className={darkMode ? "expcontent" : "expcontent-light"}>
               <div className="companyStart row">
                 <div className="roleName col-6">
                 {exp.role}
