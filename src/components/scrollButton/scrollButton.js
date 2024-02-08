@@ -10,7 +10,7 @@ const ScrollButton = ({darkMode}) => {
     }
   });
 
-  const scrollArrow = darkMode ? cld.image('docs/models-13') : cld.image('docs/models-14') 
+  const scrollArrow = darkMode ? cld.image('docs/models-15') : cld.image('docs/models-14') 
   
   const [visible, setVisible] = useState(false) 
   
