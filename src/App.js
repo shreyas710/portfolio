@@ -10,6 +10,7 @@ import 'jquery/dist/jquery.min.js'; // Have to install and import jQuery because
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import ScrollButton from './components/scrollButton/scrollButton';
+import Skills from './components/Skills/Skills'
 
 function App() {
 
@@ -54,9 +55,11 @@ function App() {
           <Home darkMode={darkMode}/>
           <Experience darkMode={darkMode}/>
           <Project darkMode={darkMode}/>
+          <Skills darkMode={darkMode}/>
           <Contact darkMode={darkMode}/>
-          <Footer darkMode={darkMode}/>
         </div>
+        <hr style={{color: darkMode ? "#faebd7" : "black", margin: "0"}}/>
+        <Footer darkMode={darkMode}/>
         <ScrollButton darkMode={darkMode}/>
     </div>
   );

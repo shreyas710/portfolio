@@ -38,10 +38,11 @@ const Navbar = ({darkMode, setDarkMode}) => {
       </div>
       
       <div className="mobile-nav" style={{display: displayNav, color: darkMode ? "antiquewhite" : "#333", marginTop: "200px", transition: "all 0.6s"}}>
-        <div className='links'>
+        <div className='links' style={{marginTop: "70px"}}>
           <HashLink smooth onClick={() => {window.scrollTo(0,0); toggleNav()}}>Home</HashLink>
           <HashLink smooth onClick={() => toggleNav()} to='#experiences'>Experiences</HashLink>
           <HashLink smooth onClick={() => toggleNav()} to='#projects'>Projects</HashLink>
+          <HashLink smooth onClick={() => toggleNav()} to='#skills'>Skills</HashLink>
           <HashLink smooth onClick={() => toggleNav()} to='#contact'>Contact</HashLink>
         </div>
       </div>
@@ -50,6 +51,7 @@ const Navbar = ({darkMode, setDarkMode}) => {
         <HashLink smooth onClick={() => window.scrollTo(0,0)}>Home</HashLink>
         <HashLink smooth to='#experiences'>Experiences</HashLink>
         <HashLink smooth to='#projects'>Projects</HashLink>
+        <HashLink smooth to='#skills'>Skills</HashLink>
         <HashLink smooth to='#contact'>Contact</HashLink>
       </div>
     </nav>

@@ -1,0 +1,40 @@
+.skills .heading h3 {
+    margin-top: 100px;
+    color: #f1356d;
+}
+
+.skillsBox {
+    border: 1px solid antiquewhite;
+    border-radius: 20px;
+    box-shadow: 10px 0 50px black;
+    margin-top: 20px;
+}
+
+.skillsList ul{
+    padding-top: 10px;
+    list-style-type: none;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.skillsList ul li {
+    margin-top: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #ed6991;
+    border-radius: 10px;
+    float: left;
+    margin-right: 20px
+}
+
+.skillsList ul li:hover {
+    cursor: default;
+}
+
+@media only screen and (max-width: 1200px) {
+    .codeImg {
+        display: none;
+    }
+}
