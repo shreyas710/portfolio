@@ -3,7 +3,7 @@ import './Experience.css';
 
 const Experience = ({darkMode}) => {
 
-  let title = `<experiences>`
+  let title = `<experiences . . . >`
 
   const exps = [{
     id: 1,

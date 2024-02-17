@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser';
 
 const Contact = ({darkMode}) => {
 
-  let title = `<contact me>`
+  let title = `<contact . . . >`
 
   const [emailID, setEmailID] = useState('');
   const [name, setName] = useState('');

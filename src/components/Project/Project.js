@@ -19,7 +19,7 @@ const Project = ({darkMode}) => {
   const githubLogo = darkMode ? cld.image('docs/models-6') : cld.image('docs/models-10');
   const openProject = darkMode ? cld.image('docs/models-32') : cld.image('docs/models-33');
 
-  let title = `<projects>`
+  let title = `<projects . . . >`
 
   const projects = [
     {

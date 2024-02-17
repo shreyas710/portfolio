@@ -5,7 +5,7 @@ import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from '@cloudinary/react';
 
 const Skills = ({darkMode}) => {
-  let title = `<skills>`
+  let title = `<skills . . . >`
 
   const cld = new Cloudinary({
     cloud: {
