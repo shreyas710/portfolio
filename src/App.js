@@ -11,6 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import ScrollButton from './components/scrollButton/scrollButton';
 import Skills from './components/Skills/Skills'
+import { Cloudinary } from "@cloudinary/url-gen";
 
 function App() {
 
@@ -32,6 +33,14 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [darkMode, setDarkMode] = useState(useThemeDetector());
 
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: 'dvuknw9qw'
+    }
+  });
+
+  const profileImg = cld.image('docs/models-4'); 
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -52,7 +61,7 @@ function App() {
     <div className="App">
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode}/>
         <div className={darkMode ? "content" : "content-light"} id='home'>
-          <Home darkMode={darkMode}/>
+          <Home darkMode={darkMode} profileImg={profileImg}/>
           <Experience darkMode={darkMode}/>
           <Project darkMode={darkMode}/>
           <Skills darkMode={darkMode}/>

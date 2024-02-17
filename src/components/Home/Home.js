@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from '@cloudinary/react';
 
-const Home = ({darkMode}) => {
+const Home = ({darkMode, profileImg}) => {
 
   const cld = new Cloudinary({
     cloud: {
@@ -12,7 +12,6 @@ const Home = ({darkMode}) => {
     }
   });
 
-  const profileImg = cld.image('docs/models-4'); 
   const githubLogo = darkMode ? cld.image('docs/models-6') : cld.image('docs/models-10');
   const linkedinLogo = darkMode ? cld.image('docs/models-3') : cld.image('docs/models-11');
   const instaLogo = darkMode ? cld.image('docs/models-2') : cld.image('docs/models-12');

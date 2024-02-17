@@ -112,7 +112,34 @@ const Skills = ({darkMode}) => {
           title: "Minikube",
         }
       ]
-    }
+    } 
+    // {
+    //   id: 6,
+    //   title: "Machine Learning",
+    //   img: "docs/models-30",
+    //   languages: [
+    //     {
+    //       id: 1,
+    //       title: "NumPy"
+    //     },
+    //     {
+    //       id: 2,
+    //       title: "Keras"
+    //     },
+    //     {
+    //       id: 3,
+    //       title: "TensorFlow",
+    //     },
+    //     {
+    //       id: 4,
+    //       title: "Scikit Learn"
+    //     },
+    //     {
+    //       id: 5,
+    //       title: "MATLAB"
+    //     }
+    //   ]
+    // }
   ]
 
   

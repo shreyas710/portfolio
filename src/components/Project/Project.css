@@ -7,35 +7,30 @@
     color: antiquewhite;
 }
 
-.accordion {
-    padding-top: 20px;
-}
-
-.accordion-header button {
-    font-size: 35px;
-    font-weight: 500;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
 .enableDark button {
     background-color: #333 !important;
     color: antiquewhite !important;
+    transition: background 1s;
 }
 
 .enableLight button {
     background-color: #e0cdb4 !important;
     color: #222 !important;
+    transition: background 1s;
 }
 
 .bodyDark {
     background-color: #222 !important;
+    transition: background 1s;
 }
 
 .bodyLight {
     background-color: antiquewhite !important;
+    transition: background 1s;
 }
 
 .bodyDark .description ul li {
+    margin-top: 10px;
     color: antiquewhite;
     font-size: 18px;
     font-weight: 200;
@@ -43,13 +38,14 @@
 }
 
 .bodyLight .description ul li {
+    margin-top: 10px;
     color: #222;
     font-size: 18px;
     font-weight: 200;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.accordion-body .description ul li::marker {
+.description ul li::marker {
     color: #f1356d;
 }
 
@@ -120,4 +116,45 @@
     border-radius: 20px;
     height: 200px;
     z-index: 1000;
+}
+
+.card:hover {
+    cursor: default;
+    box-shadow: 10px 0 50px black;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.changeLight-light {
+    color: antiquewhite;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.changeLight-dark {
+    color: #222;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.card:hover .changeLight-light {
+    color: #f1356d;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card:hover .changeLight-dark {
+    color: #f1356d;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+ul li::marker {
+    color: #f1356d;
+}
+
+ul li {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 200;
 }
