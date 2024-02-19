@@ -70,7 +70,7 @@ const Home = ({darkMode, profileImg}) => {
         </div>
 
       <div className={(darkMode ? "resumeButton" : "resumeButton-light") + " row"}>
-        <a href= 'https://drive.google.com/file/d/1JpmFrep0oql7o2lsc2QXX_K8qOz-rCNj/view?usp=sharing' target='_blank' rel='noreferrer noopener' type='button'>
+        <a href= 'https://drive.google.com/file/d/1_Ke1702oba4OHVBk72wg_w0gfHxnLZk5/view?usp=sharing' target='_blank' rel='noreferrer noopener' type='button'>
           View Resume
         </a>
       </div>
