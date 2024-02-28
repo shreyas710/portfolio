@@ -4,7 +4,7 @@ import './Skills.css'
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from '@cloudinary/react';
 
-const Skills = ({darkMode}) => {
+const Skills = ({ darkMode }) => {
   let title = `<skills . . . >`
 
   const cld = new Cloudinary({
@@ -57,17 +57,33 @@ const Skills = ({darkMode}) => {
         {
           id: 3,
           title: "SCSS",
+        },
+        {
+          id: 4,
+          title: "Chakra UI"
         }
       ]
     },
     {
-    id: 3,
-    title: "Backend",
-    img: "docs/models-24",
-    languages: [
+      id: 3,
+      title: "Backend",
+      img: "docs/models-24",
+      languages: [
         {
           id: 1,
           title: "Node.js",
+        },
+        {
+          id: 2,
+          title: "Express"
+        },
+        {
+          id: 3,
+          title: "Socket.io"
+        },
+        {
+          id: 4,
+          title: "JWT"
         }
       ]
     },
@@ -112,7 +128,7 @@ const Skills = ({darkMode}) => {
           title: "Minikube",
         }
       ]
-    } 
+    }
     // {
     //   id: 6,
     //   title: "Machine Learning",
@@ -142,44 +158,44 @@ const Skills = ({darkMode}) => {
     // }
   ]
 
-  
 
-  return ( 
-    <div className='skills container' id="skills" style={{color: darkMode ? "antiquewhite" : "#222"}}>
+
+  return (
+    <div className='skills container' id="skills" style={{ color: darkMode ? "antiquewhite" : "#222" }}>
       <div className="heading row">
         <h3>{title}</h3>
       </div>
 
-      <div className='skillsBox row' style={{color: darkMode ? "antiquewhite" : "#222"}}>
+      <div className='skillsBox row' style={{ color: darkMode ? "antiquewhite" : "#222" }}>
         <div className='col-xl-6'>
-        {skills.map(skill => {
-          return (
-            <div style={{marginTop: "20px", marginLeft: "20px", marginBottom: skill.id === 5 ? "20px" : "0px"}} key={skill.id}>
-              <div style={{color: darkMode ? "#faebd7" : "#222", fontSize: "35px", fontWeight: "500"}}>
-                <AdvancedImage loading="lazy" cldImg={cld.image(skill.img)} width={"30px"} height={"30px"} style={{marginRight: "20px"}} alt={skill.title}/>
-                {skill.title}
+          {skills.map(skill => {
+            return (
+              <div style={{ marginTop: "20px", marginLeft: "20px", marginBottom: skill.id === 5 ? "20px" : "0px" }} key={skill.id}>
+                <div style={{ color: darkMode ? "#faebd7" : "#222", fontSize: "35px", fontWeight: "500" }}>
+                  <AdvancedImage loading="lazy" cldImg={cld.image(skill.img)} width={"30px"} height={"30px"} style={{ marginRight: "20px" }} alt={skill.title} />
+                  {skill.title}
+                </div>
+                <div className='skillsList'>
+                  <ul>
+                    {skill.languages.map(lang => {
+                      return (
+                        <li style={{ color: darkMode ? "antiquewhite" : "#222", fontSize: "20px", fontWeight: "300" }} key={lang.id}>
+                          {lang.title}
+                        </li>
+                      )
+                    })}
+                  </ul>
+                </div>
               </div>
-              <div className='skillsList'>
-                <ul>
-                  {skill.languages.map(lang => {
-                    return (
-                      <li style={{color: darkMode ? "antiquewhite" : "#222", fontSize: "20px", fontWeight: "300"}} key={lang.id}>
-                        {lang.title}
-                      </li>
-                    )
-                  })}
-                </ul>
-              </div>
-            </div>
-            
-          )
-        })}
+
+            )
+          })}
         </div>
         <div className="codeImg col-6">
-        <AdvancedImage loading="lazy" cldImg={cld.image("docs/models-29")} width={"400px"} height={"400px"} style={{marginLeft: "290px", marginTop: "-90px"}} alt="coding"/>
+          <AdvancedImage loading="lazy" cldImg={cld.image("docs/models-29")} width={"400px"} height={"400px"} style={{ marginLeft: "290px", marginTop: "-90px" }} alt="coding" />
+        </div>
       </div>
-      </div>
-      
+
     </div>
   )
 };

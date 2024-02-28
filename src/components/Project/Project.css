@@ -157,3 +157,93 @@ ul li {
     font-size: 18px;
     font-weight: 200;
 }
+
+.project .resumeButton {
+    background-color: antiquewhite;
+    border-radius: 5px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.project .resumeButton,
+.project .resumeButton-light {
+    margin-top: 50px;
+    height: 50px;
+    padding: 0px 12px;
+}
+
+.project .resumeButton-light {
+    background-color: #222;
+    border-radius: 5px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.project .resumeButton,
+.project .resumeButton-light {
+    text-align: center;
+}
+
+.project .resumeButton a {
+    width: 100%;
+    background-color: antiquewhite;
+    color: #222;
+    text-decoration: none;
+    font-size: large;
+    border-radius: 10px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    padding-top: 9px;
+}
+
+.project .resumeButton-light a {
+    width: 100%;
+    background-color: #222;
+    text-decoration: none;
+    font-size: large;
+    color: antiquewhite;
+    border-radius: 10px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    padding-top: 9px;
+}
+
+.project .resumeButton::after,
+.project .resumeButton-light::after {
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.project .resumeButton:hover,
+.project .resumeButton-light:hover {
+    opacity: 0.5;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.project .resumeButton:hover::after,
+.project .resumeButton-light:hover::after {
+    opacity: 1;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.project .resumeButton a::after,
+.project .resumeButton-light a::after {
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.project .resumeButton a:hover,
+.project .resumeButton-light a:hover {
+    opacity: 0.5;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.project .resumeButton a:hover::after,
+.project .resumeButton-light a:hover::after {
+    opacity: 1;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
