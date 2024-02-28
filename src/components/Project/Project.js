@@ -94,7 +94,7 @@ const Project = ({ darkMode }) => {
           }
         </Row>
         <div className='row' style={{ justifyContent: "center" }}>
-          <div className={(darkMode ? "resumeButton" : "resumeButton-light") + " col-4"}>
+          <div className={(darkMode ? "resumeButton" : "resumeButton-light") + " col-md-4"}>
             <a href='https://github.com/shreyas710' target='_blank' rel='noreferrer noopener' type='button'>
               Show More Projects
             </a>
