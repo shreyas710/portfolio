@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from '@cloudinary/react';
@@ -93,12 +94,8 @@ const Project = ({ darkMode }) => {
             })
           }
         </Row>
-        <div className='row' style={{ justifyContent: "center" }}>
-          <div className={(darkMode ? "resumeButton" : "resumeButton-light") + " col-md-4"}>
-            <a href='https://github.com/shreyas710' target='_blank' rel='noreferrer noopener' type='button'>
-              Show More Projects
-            </a>
-          </div>
+        <div className='row' style={{ justifyContent: "center", marginTop: "50px" }}>
+          <Button href="https://github.com/shreyas710" variant="danger" target="_blank" className='btn col-md-4'>Show More Projects</Button>
         </div>
       </Container>
     </div>
