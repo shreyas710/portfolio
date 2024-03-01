@@ -29,6 +29,7 @@ const Project = ({ darkMode }) => {
       techStack: 'ReactJS, NodeJS, Express, Socket.io, Chakra UI, MongoDB, Mongoose',
       desc: 'A chat application that enables real-time chat updation and real-time notifications using Socket.io. Implemented JWT Authentication for protecting user chats. Allowed faciity of creating group chats.',
       show: "hide",
+      projectLink: "https://chat-io-c1wc.onrender.com/",
       sourceCodeLink: "https://github.com/shreyas710/Chat.io",
     },
     {

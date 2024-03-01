@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from '@cloudinary/react';
 
-const Home = ({darkMode, profileImg}) => {
+const Home = ({ darkMode, profileImg }) => {
 
   const cld = new Cloudinary({
     cloud: {
@@ -19,58 +19,58 @@ const Home = ({darkMode, profileImg}) => {
   return (
     <div className='home container'>
       <div className="animation row">
-        <p style={{fontSize: "5em"}}>Shreyas Kulkarni.</p>
+        <p style={{ fontSize: "5em" }}>Shreyas Kulkarni.</p>
       </div>
-      
+
       <div className={(darkMode ? "extra" : "extra-light") + " row"}>
         <div className="aboutme col-md-6">
           <TypeAnimation
             sequence={[
-                'Software Engineer',
-                1500,
-                'Full Stack Developer',
-                1500,
-                'Dev Ops Engineer',
-                1500
-              ]}
+              'Software Engineer',
+              1500,
+              'Full Stack Developer',
+              1500,
+              'Dev Ops Engineer',
+              1500
+            ]}
             wrapper="div"
             speed={10}
             deletionSpeed={60}
-            style={{ color:'#f1356d', fontSize: '2em', display: 'inline-block' }}
+            style={{ color: '#f1356d', fontSize: '2em', display: 'inline-block' }}
             repeat={Infinity}
-          /> 
+          />
           <br />
           <br />
           <br />
           <h5>I am a Computer Science Graduate Student at the University of Southern California.</h5>
-              <div style={{marginTop: "50px", marginBottom: "20px"}}>
-              <h5>I have a good grasp of Data Structures and Algorithms. I have good experience in the fields of frontend and backend development.</h5>                
-              </div>
+          <div style={{ marginTop: "50px", marginBottom: "20px" }}>
+            <h5>I have a good grasp of Data Structures and Algorithms. I have good experience in the fields of frontend and backend development.</h5>
+          </div>
         </div>
         <div className="profilepic col-md-6">
-          <AdvancedImage loading="lazy" cldImg={profileImg}/>
+          <AdvancedImage loading="lazy" cldImg={profileImg} />
         </div>
       </div>
       <div className="profileLinks row">
-          <div className="github col-1">
-            <a href="https://github.com/shreyas710" target='_blank' rel='noreferrer noopener'>
-              <AdvancedImage loading="lazy" cldImg={githubLogo} width={"30px"} height={"30px"} alt="github"/>
-            </a>
-          </div>
-          <div className="linkedin col-1">
-            <a href="https://www.linkedin.com/in/shreyasnk532" target='_blank' rel='noreferrer noopener'>
-              <AdvancedImage loading="lazy" cldImg={linkedinLogo} width={"30px"} height={"30px"} alt="linkedin"/>
-            </a>
-          </div>
-          <div className="mail col-1">
-            <a href="https://www.instagram.com/shr3yas.ku1karni" target='_blank' rel='noreferrer noopener'>
-              <AdvancedImage loading="lazy" cldImg={instaLogo} width={"30px"} height={"30px"} alt="instagram"/>
-            </a>
-          </div>
+        <div className="github col-1">
+          <a href="https://github.com/shreyas710" target='_blank' rel='noreferrer noopener'>
+            <AdvancedImage loading="lazy" cldImg={githubLogo} width={"30px"} height={"30px"} alt="github" />
+          </a>
         </div>
+        <div className="linkedin col-1">
+          <a href="https://www.linkedin.com/in/shreyasnk532" target='_blank' rel='noreferrer noopener'>
+            <AdvancedImage loading="lazy" cldImg={linkedinLogo} width={"30px"} height={"30px"} alt="linkedin" />
+          </a>
+        </div>
+        <div className="mail col-1">
+          <a href="https://www.instagram.com/shr3yas.ku1karni" target='_blank' rel='noreferrer noopener'>
+            <AdvancedImage loading="lazy" cldImg={instaLogo} width={"30px"} height={"30px"} alt="instagram" />
+          </a>
+        </div>
+      </div>
 
       <div className={(darkMode ? "resumeButton" : "resumeButton-light") + " row"}>
-        <a href= 'https://drive.google.com/file/d/1SZcLcHI0zCCmdQ-zS-tQD30VBm2nK3fn/view?usp=sharing' target='_blank' rel='noreferrer noopener' type='button'>
+        <a href='https://drive.google.com/file/d/19CDegZ0xvkmOF-II1pbFgCXNGjb5CsT9/view?usp=sharing' target='_blank' rel='noreferrer noopener' type='button'>
           View Resume
         </a>
       </div>
