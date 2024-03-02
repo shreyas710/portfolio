@@ -30,7 +30,6 @@ function App() {
     return isDarkTheme;
   }
 
-  const [loading, setLoading] = useState(true);
   const [darkMode, setDarkMode] = useState(useThemeDetector());
 
   const cld = new Cloudinary({
@@ -40,22 +39,6 @@ function App() {
   });
 
   const profileImg = cld.image('docs/models-4'); 
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000)
-  })
-
-  if(loading) {
-    return (
-      <div className="App loadingContent" style={{backgroundColor: darkMode ? "#222" : "antiquewhite"}}>
-        <div className="spinner-border" role="status" style={{color: '#f1356d', width: '50px', height: '50px'}}>
-          <span className="visually-hidden">Loading...</span>
-        </div>
-      </div>
-    )
-  } 
 
   return (
     <div className="App">
