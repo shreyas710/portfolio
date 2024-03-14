@@ -31,13 +31,17 @@ const Home = ({ darkMode, profileImg }) => {
               'Full Stack Developer',
               1500,
               'Dev Ops Engineer',
-              1500
+              1500,
+              'Data Scientist',
+              1500,
+              'Machine Learning Engineer',
+              1500,
             ]}
             wrapper="div"
-            speed={10}
-            deletionSpeed={60}
+            speed={60}
+            deletionSpeed={70}
             style={{ color: '#f1356d', fontSize: '2em', display: 'inline-block' }}
-            repeat={Infinity}
+            repeat={0}
           />
           <br />
           <br />
@@ -70,7 +74,7 @@ const Home = ({ darkMode, profileImg }) => {
       </div>
 
       <div className={(darkMode ? "resumeButton" : "resumeButton-light") + " row"}>
-        <a href='https://drive.google.com/file/d/1YKe2wspBRsbdGvUtzpG41rb7PXFvYrLp/view?usp=sharing' target='_blank' rel='noreferrer noopener' type='button'>
+        <a href='https://drive.google.com/file/d/1Sgc7ztVFWFFYV8Mrs_Z6r791fXewtLG3/view?usp=sharing' target='_blank' rel='noreferrer noopener' type='button'>
           View Resume
         </a>
       </div>
