@@ -166,7 +166,7 @@ const Skills = ({ darkMode }) => {
         <h3>{title}</h3>
       </div>
 
-      <div className='skillsBox row' style={{ color: darkMode ? "antiquewhite" : "#222" }}>
+      <div className={(darkMode ? 'skillsBox' : 'skillsBoxLight') + ' row'} style={{ color: darkMode ? "antiquewhite" : "#222" }}>
         <div className='col-xl-6'>
           {skills.map(skill => {
             return (
