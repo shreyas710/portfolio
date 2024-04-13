@@ -37,6 +37,10 @@ const Skills = ({ darkMode }) => {
         },
         {
           id: 5,
+          title: "Golang",  
+        },
+        {
+          id: 6,
           title: "Python",
         }
       ]
@@ -167,7 +171,7 @@ const Skills = ({ darkMode }) => {
       </div>
 
       <div className={(darkMode ? 'skillsBox' : 'skillsBoxLight') + ' row'} style={{ color: darkMode ? "antiquewhite" : "#222" }}>
-        <div className='col-xl-6'>
+        <div className='col-xl-12'>
           {skills.map(skill => {
             return (
               <div style={{ marginTop: "20px", marginLeft: "20px", marginBottom: skill.id === 5 ? "20px" : "0px" }} key={skill.id}>
@@ -190,9 +194,6 @@ const Skills = ({ darkMode }) => {
 
             )
           })}
-        </div>
-        <div className="codeImg col-6">
-          <AdvancedImage loading="lazy" cldImg={cld.image("docs/models-29")} width={"400px"} height={"400px"} style={{ marginLeft: "290px", marginTop: "-90px" }} alt="coding" />
         </div>
       </div>
 

@@ -23,7 +23,7 @@ const Home = ({ darkMode, profileImg }) => {
       </div>
 
       <div className={(darkMode ? "extra" : "extra-light") + " row"}>
-        <div className="aboutme col-md-12">
+        <div className="aboutme col-md-6">
           <TypeAnimation
             sequence={[
               'Software Engineer',
@@ -47,9 +47,12 @@ const Home = ({ darkMode, profileImg }) => {
           <br />
           <br />
           <h5>I am a Computer Science Graduate Student at the University of Southern California.</h5>
-          <div style={{ marginTop: "30px", marginBottom: "50px" }}>
+          <div style={{ marginTop: "50px", marginBottom: "50px" }}>
             <h5>I have a good grasp of <strong style={{ color: !darkMode ? "#222" : "antiquewhite", fontWeight: "1000" }}>Data Structures and Algorithms</strong>. I have good experience in the fields of DevOps, Full Stack Development and Machine Learning.</h5>
           </div>
+        </div>
+        <div className="profilepic col-md-6">
+          <AdvancedImage loading="lazy" cldImg={profileImg} />
         </div>
       </div>
       <div className="profileLinks row">
@@ -70,8 +73,8 @@ const Home = ({ darkMode, profileImg }) => {
         </div>
       </div>
 
-      <div className={(darkMode ? "resumeButton" : "resumeButton-light") + " row"}>
-        <a href='https://drive.google.com/file/d/1HCNJCuAO1zS38CAS6inO4jaovw6Or7mp/view?usp=sharing' target='_blank' rel='noreferrer noopener' type='button'>
+      <div style={{ marginLeft: "1px" }} className={(darkMode ? "resumeButton" : "resumeButton-light") + " row"}>
+        <a href='https://drive.google.com/file/d/18-eWz2v8W3D6-PHEBluzF0AD3rqkM03v/view?usp=share_link' target='_blank' rel='noreferrer noopener' type='button'>
           View Resume
         </a>
       </div>

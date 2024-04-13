@@ -13,16 +13,20 @@ const Experience = ({ darkMode }) => {
     'endDate': 'June 2023',
     'desc': [
       {
-        'text': "Pioneered development of the Switch Loan Variant (SLV) process, allowing a customer base of 50 million to change loan variants, improving customer flexibility, satisfaction, and engagement by 70%.",
+        'text': "Pioneered development of the Switch Loan Variant process, allowing a customer base of 50 million to change loan variants, revamping customer flexibility, satisfaction, and engagement by 70%.",
         id: 1
       },
       {
-        "text": "Conceptualized and implemented the Increase Credit Line (ICL) model, revolutionizing how customers accessed Top-Up Loans on Existing Loans. ICL is now live for over 50,000 customers on the Bajaj Finserv App and is projected to generate a revenue of $1.2 million.",
+        "text": "Took end-to-end responsibility for implementing the Increase Credit Line model, allowing customers to access Top-Up loans on existing loans.ICL is now live for over 50,000 customers and is projected to generate a revenue of $1.2 million.",
         id: 2
       },
       {
-        "text": "Designed and deployed an end-to-end ELK Stack API Monitoring system using PVCs and Kubernetes. The system helped to improve overall API performance by 80%.",
+        "text": "Designed and deployed an end-to-end ELK Stack API Monitoring system using PVCs and Kubernetes. The system improved overall API performance by 60%.",
         id: 3
+      }, 
+      {
+        "text": "Worked on Google Analytics and ClickStream part for EMI, HEMI, and SALPL Modules.",
+        id: 4
       }
     ]
   }, {
@@ -37,8 +41,12 @@ const Experience = ({ darkMode }) => {
         id: 1
       },
       {
-        "text": "Developed features to efficiently handle orders from different stores using MapMyIndia API and added functionality to display new product arrivals resulting in a 20% increase in customer engagement.",
+        "text": "Added functionality to display new product arrivals resulting in a 20% increase in customer engagement.",
         id: 2
+      },
+      {
+        "text": "Developed feature to select different stores and place orders from different stores using MapMyIndia API.",
+        id: 3
       }
     ]
   }];
