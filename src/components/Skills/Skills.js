@@ -37,7 +37,7 @@ const Skills = ({ darkMode }) => {
         },
         {
           id: 5,
-          title: "Golang",  
+          title: "Golang",
         },
         {
           id: 6,
@@ -116,6 +116,33 @@ const Skills = ({ darkMode }) => {
     },
     {
       id: 5,
+      title: "Machine Learning",
+      img: "docs/models-30",
+      languages: [
+        {
+          id: 1,
+          title: "NumPy"
+        },
+        {
+          id: 2,
+          title: "Keras"
+        },
+        {
+          id: 3,
+          title: "TensorFlow",
+        },
+        {
+          id: 4,
+          title: "Scikit Learn"
+        },
+        {
+          id: 5,
+          title: "MATLAB"
+        }
+      ]
+    },
+    {
+      id: 6,
       title: "DevOps",
       img: "docs/models-28",
       languages: [
@@ -133,33 +160,6 @@ const Skills = ({ darkMode }) => {
         }
       ]
     }
-    // {
-    //   id: 6,
-    //   title: "Machine Learning",
-    //   img: "docs/models-30",
-    //   languages: [
-    //     {
-    //       id: 1,
-    //       title: "NumPy"
-    //     },
-    //     {
-    //       id: 2,
-    //       title: "Keras"
-    //     },
-    //     {
-    //       id: 3,
-    //       title: "TensorFlow",
-    //     },
-    //     {
-    //       id: 4,
-    //       title: "Scikit Learn"
-    //     },
-    //     {
-    //       id: 5,
-    //       title: "MATLAB"
-    //     }
-    //   ]
-    // }
   ]
 
 
@@ -175,7 +175,7 @@ const Skills = ({ darkMode }) => {
           {skills.map(skill => {
             return (
               <div style={{ marginTop: "20px", marginLeft: "20px", marginBottom: skill.id === 5 ? "20px" : "0px" }} key={skill.id}>
-                <div style={{ color: darkMode ? "#faebd7" : "#222", fontSize: "35px", fontWeight: "500" }}>
+                <div style={{ color: darkMode ? "#faebd7" : "#222", fontSize: "30px", fontWeight: "500" }}>
                   <AdvancedImage loading="lazy" cldImg={cld.image(skill.img)} width={"30px"} height={"30px"} style={{ marginRight: "20px" }} alt={skill.title} />
                   {skill.title}
                 </div>
@@ -183,7 +183,7 @@ const Skills = ({ darkMode }) => {
                   <ul>
                     {skill.languages.map(lang => {
                       return (
-                        <li style={{ color: darkMode ? "antiquewhite" : "#222", fontSize: "20px", fontWeight: "300" }} key={lang.id}>
+                        <li style={{ color: darkMode ? "antiquewhite" : "#222", fontSize: "18px", fontWeight: "300" }} key={lang.id}>
                           {lang.title}
                         </li>
                       )
