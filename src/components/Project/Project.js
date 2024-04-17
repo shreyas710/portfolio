@@ -25,19 +25,17 @@ const Project = ({ darkMode }) => {
   const projects = [
     {
       id: 1,
-      title: 'Chat.io',
-      techStack: 'ReactJS, NodeJS, Express, Socket.io, Chakra UI, MongoDB, Mongoose',
-      desc: 'A chat application that enables real-time chat updation and real-time notifications using Socket.io. Implemented JWT Authentication for protecting user chats. Allowed faciity of creating group chats.',
-      show: "hide",
-      projectLink: "https://chat-io-c1wc.onrender.com/",
-      sourceCodeLink: "https://github.com/shreyas710/Chat.io",
+      title: 'Quantized Lag Llama',
+      techStack: 'Pytorch, GluonTS, Numpy, Time series forecasting',
+      desc: 'Tweaked the GluonTS Lag Llama model to run it on CPU instead of GPU. Brought down the model size from 11.34 MB to 2.01 MB by converting float precision values in GluonTS to integer values.',
+      show: "show",
     },
     {
       id: 2,
-      title: 'Summarized Report for Chest X-Rays',
-      techStack: 'Python, Tensorflow, Keras, Numpy, Pandas, Streamlit',
-      desc: 'A Streamlit application focused on generating summarized medical report for uploaded Chest X-Rays',
-      show: "hide",
+      title: "Pool Ball Game",
+      techStack: "C++, OpenGL, DirectX, Win32 API",
+      desc: "A 3D Pool Ball Game developed using C++. Implemented the game using various physics concepts like collision detection using SAT and GJK, momentum conservation, and friction.",
+      show: "show",
     },
     {
       id: 3,
@@ -47,7 +45,23 @@ const Project = ({ darkMode }) => {
       show: "show",
       projectLink: "https://shreyas710.github.io/pathFindingVisualizer/",
       sourceCodeLink: "https://github.com/shreyas710/pathFindingVisualizer"
-    }
+    },
+    {
+      id: 4,
+      title: 'Chat.io',
+      techStack: 'ReactJS, NodeJS, Express, Socket.io, Chakra UI, MongoDB, Mongoose',
+      desc: 'A chat application that enables real-time chat updation and real-time notifications using Socket.io. Implemented JWT Authentication for protecting user chats. Allowed faciity of creating group chats.',
+      show: "hide",
+      projectLink: "https://chat-io-c1wc.onrender.com/",
+      sourceCodeLink: "https://github.com/shreyas710/Chat.io",
+    },
+    {
+      id: 5,
+      title: 'Summarized Report for Chest X-Rays',
+      techStack: 'Python, Tensorflow, Keras, Numpy, Pandas, Streamlit',
+      desc: 'A Streamlit application focused on generating summarized medical report for uploaded Chest X-Rays',
+      show: "hide",
+    },
   ]
 
   return (

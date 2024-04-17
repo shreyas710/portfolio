@@ -52,19 +52,31 @@ const Skills = ({ darkMode }) => {
       languages: [
         {
           id: 1,
-          title: "React",
+          title: "Next.js",
         },
         {
           id: 2,
-          title: "Angular",
+          title: "React.js",
         },
         {
           id: 3,
-          title: "SCSS",
+          title: "Angular",
         },
         {
           id: 4,
+          title: "SCSS",
+        },
+        {
+          id: 5,
+          title: "Tailwind CSS"
+        },
+        {
+          id: 6,
           title: "Chakra UI"
+        },
+        {
+          id: 7,
+          title: "Material UI"
         }
       ]
     },
@@ -143,6 +155,25 @@ const Skills = ({ darkMode }) => {
     },
     {
       id: 6,
+      title: "Game Development",
+      img: "docs/models-35",
+      languages: [
+        {
+          id: 1,
+          title: "Win32 API",
+        },
+        {
+          id: 2,
+          title: "DirectX"
+        },
+        {
+          id: 3,
+          title: "OpenGL",
+        },
+      ]
+    },
+    {
+      id: 7,
       title: "DevOps",
       img: "docs/models-28",
       languages: [
