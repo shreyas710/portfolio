@@ -1,23 +1,28 @@
-import React from 'react';
-import './Home.css'
-import { TypeAnimation } from 'react-type-animation';
+import React from "react";
+import "./Home.css";
+import { TypeAnimation } from "react-type-animation";
 import { Cloudinary } from "@cloudinary/url-gen";
-import { AdvancedImage } from '@cloudinary/react';
+import { AdvancedImage } from "@cloudinary/react";
 
 const Home = ({ darkMode, profileImg }) => {
-
   const cld = new Cloudinary({
     cloud: {
-      cloudName: 'dvuknw9qw'
-    }
+      cloudName: "dvuknw9qw",
+    },
   });
 
-  const githubLogo = darkMode ? cld.image('docs/models-6') : cld.image('docs/models-10');
-  const linkedinLogo = darkMode ? cld.image('docs/models-3') : cld.image('docs/models-11');
-  const instaLogo = darkMode ? cld.image('docs/models-2') : cld.image('docs/models-12');
+  const githubLogo = darkMode
+    ? cld.image("docs/models-6")
+    : cld.image("docs/models-10");
+  const linkedinLogo = darkMode
+    ? cld.image("docs/models-3")
+    : cld.image("docs/models-11");
+  const instaLogo = darkMode
+    ? cld.image("docs/models-2")
+    : cld.image("docs/models-12");
 
   return (
-    <div className='home container'>
+    <div className="home container">
       <div className="animation row">
         <p style={{ fontSize: "5em" }}>Shreyas Kulkarni.</p>
       </div>
@@ -26,29 +31,50 @@ const Home = ({ darkMode, profileImg }) => {
         <div className="aboutme col-md-6">
           <TypeAnimation
             sequence={[
-              'Software Engineer',
+              "Software Engineer",
               1500,
-              'Full Stack Developer',
+              "Full Stack Developer",
               1500,
-              'Dev Ops Engineer',
+              "Dev Ops Engineer",
               1500,
-              'Data Scientist',
+              "Game Engine Developer",
               1500,
-              'Machine Learning Engineer',
+              "Data Scientist",
+              1500,
+              "Machine Learning Engineer",
               1500,
             ]}
             wrapper="div"
             speed={60}
             deletionSpeed={70}
-            style={{ color: '#f1356d', fontSize: '2em', display: 'inline-block' }}
+            style={{
+              color: "#f1356d",
+              fontSize: "2em",
+              display: "inline-block",
+            }}
             repeat={0}
           />
           <br />
           <br />
           <br />
-          <h5>I am a Computer Science Graduate Student at the University of Southern California.</h5>
+          <h5>
+            I am a Computer Science Graduate Student at the University of
+            Southern California.
+          </h5>
           <div style={{ marginTop: "50px", marginBottom: "50px" }}>
-            <h5>I have a good grasp of <strong style={{ color: !darkMode ? "#222" : "antiquewhite", fontWeight: "1000" }}>Data Structures and Algorithms</strong>. I have good experience in the fields of DevOps, Full Stack Development and Machine Learning.</h5>
+            <h5>
+              I have a good grasp of{" "}
+              <strong
+                style={{
+                  color: !darkMode ? "#222" : "antiquewhite",
+                  fontWeight: "1000",
+                }}
+              >
+                Data Structures and Algorithms
+              </strong>
+              . I have good experience in the fields of DevOps, Full Stack
+              Development and Machine Learning.
+            </h5>
           </div>
         </div>
         <div className="profilepic col-md-6">
@@ -57,24 +83,62 @@ const Home = ({ darkMode, profileImg }) => {
       </div>
       <div className="profileLinks row">
         <div className="github col-1">
-          <a href="https://github.com/shreyas710" target='_blank' rel='noreferrer noopener'>
-            <AdvancedImage loading="lazy" cldImg={githubLogo} width={"30px"} height={"30px"} alt="github" />
+          <a
+            href="https://github.com/shreyas710"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <AdvancedImage
+              loading="lazy"
+              cldImg={githubLogo}
+              width={"30px"}
+              height={"30px"}
+              alt="github"
+            />
           </a>
         </div>
         <div className="linkedin col-1">
-          <a href="https://www.linkedin.com/in/shreyasnk532" target='_blank' rel='noreferrer noopener'>
-            <AdvancedImage loading="lazy" cldImg={linkedinLogo} width={"30px"} height={"30px"} alt="linkedin" />
+          <a
+            href="https://www.linkedin.com/in/shreyasnk532"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <AdvancedImage
+              loading="lazy"
+              cldImg={linkedinLogo}
+              width={"30px"}
+              height={"30px"}
+              alt="linkedin"
+            />
           </a>
         </div>
         <div className="mail col-1">
-          <a href="https://www.instagram.com/shr3yas.ku1karni" target='_blank' rel='noreferrer noopener'>
-            <AdvancedImage loading="lazy" cldImg={instaLogo} width={"30px"} height={"30px"} alt="instagram" />
+          <a
+            href="https://www.instagram.com/shr3yas.ku1karni"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <AdvancedImage
+              loading="lazy"
+              cldImg={instaLogo}
+              width={"30px"}
+              height={"30px"}
+              alt="instagram"
+            />
           </a>
         </div>
       </div>
 
-      <div style={{ marginLeft: "1px" }} className={(darkMode ? "resumeButton" : "resumeButton-light") + " row"}>
-        <a href='https://drive.google.com/file/d/18vBEGQIKqP2pHf_LugqBIzCAtidpudjx/view?usp=sharing' target='_blank' rel='noreferrer noopener' type='button'>
+      <div
+        style={{ marginLeft: "1px" }}
+        className={(darkMode ? "resumeButton" : "resumeButton-light") + " row"}
+      >
+        <a
+          href="https://drive.google.com/file/d/18vBEGQIKqP2pHf_LugqBIzCAtidpudjx/view?usp=sharing"
+          target="_blank"
+          rel="noreferrer noopener"
+          type="button"
+        >
           View Resume
         </a>
       </div>
