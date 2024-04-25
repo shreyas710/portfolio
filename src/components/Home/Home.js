@@ -134,7 +134,7 @@ const Home = ({ darkMode, profileImg }) => {
         className={(darkMode ? "resumeButton" : "resumeButton-light") + " row"}
       >
         <a
-          href="https://drive.google.com/file/d/18vBEGQIKqP2pHf_LugqBIzCAtidpudjx/view?usp=sharing"
+          href="https://drive.google.com/file/d/1LqBfJpBZIhgcC12OTVM7dM55zF6Xl1PY/view?usp=share_link"
           target="_blank"
           rel="noreferrer noopener"
           type="button"
